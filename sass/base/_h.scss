@@ -8,29 +8,40 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 
 h1 {
   font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
+  background-color: var(--couleur-bleu);
   color: var(--couleur-rouge);
 }
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+  background-color: var(--couleur-indigo);
   color: var(--couleur-orange);
 }
 h3 {
   font-size: clamp(0.625rem, -3.2813rem + 12.5vw, 3.75rem);
+  background-color: var(--couleur-vert);
   color: var(--couleur-jaune);
 }
 h4 {
   font-size: clamp(0.9375rem, -3.0469rem + 12.75vw, 4.125rem);
+  background-color: var(--couleur-jaune);
   color: var(--couleur-vert);
 }
 h5 {
   font-size: clamp(0.625rem, -4.0625rem + 15vw, 4.375rem);
+  background-color: var(--couleur-rouge);
   color: var(--couleur-bleu);
 }
 h6 {
+  font-size: clamp(1.875rem, 0.3125rem + 5vw, 3.125rem);
+  background-color: var(--couleur-orange);
+  color: var(--couleur-indigo);
 }
 
 p {
+  font-size: clamp(2.5rem, 1.4063rem + 3.5vw, 3.375rem);
+  color: var(--couleur-bleu);
 }
 
 hr {
+    height: 0.01rem;
 }
