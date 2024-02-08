@@ -20,11 +20,16 @@ Ce thème a été développé dans le cadre du cours 4W4
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
-  --couleur-arriere-entete: #77c2e5;
-  --couleur-arriere-accueil: #c1d32d;
-  --couleur-arriere-evenement: #dd8211;
-  --couleur-arriere-galerie: #8cee99;
-  --couleur-arriere-footer: #1d3f9f;
+  --couleur-arriere-entete: #b4b4b8;
+  --couleur-arriere-accueil: #c7c8cc;
+  --couleur-arriere-evenement: #e3e1d9;
+  --couleur-arriere-galerie: #f2efe5;
+  --couleur-arriere-footer: #d1cfcab2;
+  --couleur-rouge: #e81416;
+  --couleur-jaune: #faeb36;
+  --couleur-orange: #ffa500;
+  --couleur-vert: #79c314;
+  --couleur-bleu: #487de7;
 }
 
 /* ////////////////////////////////////////// */
@@ -39,12 +44,27 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 */
 h1 {
   font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-  color: rgba(9, 41, 24, 0.3);
+  color: var(--couleur-rouge);
 }
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
-  color: rgba(9, 41, 24, 0.7);
+  color: var(--couleur-orange);
+}
+
+h3 {
+  font-size: clamp(0.625rem, -3.2813rem + 12.5vw, 3.75rem);
+  color: var(--couleur-jaune);
+}
+
+h4 {
+  font-size: clamp(0.9375rem, -3.0469rem + 12.75vw, 4.125rem);
+  color: var(--couleur-vert);
+}
+
+h5 {
+  font-size: clamp(0.625rem, -4.0625rem + 15vw, 4.375rem);
+  color: var(--couleur-bleu);
 }
 
 /* ////////////////////////////////////////// */
