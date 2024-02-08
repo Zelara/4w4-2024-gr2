@@ -40,10 +40,10 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  width: 1100px;
-  border: 1px solid red;
+  flex: 0 1 900px;
+  border: 1px solid black;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
