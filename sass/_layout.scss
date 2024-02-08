@@ -1,31 +1,39 @@
 body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    font-family: "prompt", Arial, Helvetica, sans-serif;
 }
 
 .global {
-  display: flex;
-  justify-content: center;
+    display:flex;
+    justify-content: center;
+    min-height: 30vh;
 }
 
 .global > section,
 .global > header,
-.global > footer {
-  flex: 0 1 900px;
-  border: 1px solid black;
+.global > footer{
+// flex : grow shrink basis
+    flex : 0 1 900px;
+    // border : 1px solid #aaa;
+    background-color : rgba(#1754d7, .1 );
+    padding : 5rem 1rem;
 }
-// --couleur-arriere-entete: #ccc;
-// --couleur-arriere-accueil: #ddd;
-// --couleur-arriere-evenement: #dd1;
-// --couleur-arriere-footer: #aaa;
+
+
+
 #entete {
-  background-color: var(--couleur-arriere-entete);
+    background-color: var(--couleur-arriere-entete);
 }
 #accueil {
+    background-color: var(--couleur-arriere-accueil);
 }
 #galerie {
+    background-color: var(--couleur-arriere-galerie);
 }
 #evenement {
+    background-color: var(--couleur-arriere-evenement);
 }
 #footer {
+    background-color: var(--couleur-arriere-footer);
 }
