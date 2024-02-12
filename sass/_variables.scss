@@ -1,35 +1,29 @@
+
 /*
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
-  // --couleur-arriere-entete: #b4b4b8;
-  // --couleur-arriere-accueil: #c7c8cc;
-  // --couleur-arriere-evenement: #e3e1d9;
-  // --couleur-arriere-galerie: #f2efe5;
-  // --couleur-arriere-footer: #d1cfcab2;
-  // --couleur-rouge: #e81416;
-  // --couleur-jaune: #faeb36;
-  // --couleur-orange: #ffa500;
-  // --couleur-vert: #79c314;
-  // --couleur-bleu: #487de7;
-  // --couleur-indigo: #4b369d;
+/*
+    --couleur-arriere-entete: #77c2e5;
+    --couleur-arriere-accueil: #c1d32d;
+    --couleur-arriere-evenement: #dd8211;
+    --couleur-arriere-galerie: #8cee99;
+    --couleur-arriere-footer: #1d3f9f;
+*/
+    --couleur-arriere-entete: hsl(0, 100%, 50%);
+    --couleur-arriere-accueil: hsl(60,100%, 50%);
+    --couleur-arriere-evenement: hsl(120,100%,50%);
+    --couleur-arriere-galerie: hsl(180,100%,50%);
+    --couleur-arriere-footer: hsl(240,100%,50%);
 
-  --couleur-arriere-entete: hsl(0, 10%, 50%);
-  --couleur-arriere-accueil: hsl(60, 100%, 50%);
-  --couleur-arriere-evenement: hsl(120, 100%, 50%);
-  --couleur-arriere-galerie: hsl(180, 100%, 50%);
-  --couleur-arriere-footer: hsl(240, 100%, 50%);
+    --couleur-entete: hsl(0, 100%, 15%);
+    --couleur-accueil: hsl(60,100%, 15%);
+    --couleur-evenement: hsl(120,100%,15%);
+    --couleur-galerie: hsl(180,100%,15%);
+    --couleur-footer: hsl(240,100%,15%);
 
-  --couleur-entete: hsl(0, 10%, 30%);
-  --couleur-accueil: hsl(60, 100%, 50%);
-  --couleur-evenement: hsl(120, 100%, 80%);
-  --couleur-galerie: hsl(180, 100%, 50%);
-  --couleur-footer: hsl(240, 100%, 50%);
 
-  --couleur-rouge: #e81416;
-  --couleur-jaune: #faeb36;
-  --couleur-orange: #ffa500;
-  --couleur-vert: #79c314;
-  --couleur-bleu: #487de7;
-  --couleur-indigo: #4b369d;
 }
+
+
+
