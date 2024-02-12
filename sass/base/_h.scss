@@ -9,7 +9,7 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 h1 {
   font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
   background-color: var(--couleur-bleu);
-  color: var(--couleur-rouge);
+  color: var(--couleur-entete);
 }
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
