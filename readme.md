@@ -2,19 +2,19 @@
 ## Création d'une palette de couleur avec la fonction css hsl()
 ## Ajouter des effets de vague et une diagonal
 
-### Continuer la version du Laboratoire #1
+### Continuer la version du lab #1
 - Dossier Sass
-- style.scss
-- Utilisations de différentes technique pour élaborer une palette de couleur
-- Utilisation de la règle 60-30-10
+- style.css
+- Utilisation de différentes de technique pour élaborer un palette de couleur
 
 A réaliser :
 - Compléter chacune des règles de style des éléments H
 - Changer les couleur de background et couleur des H
+- Ajouter les éléments boutons, lien a, blockquotes
 - Améliorer le design général sans être trop spécifique
-- Ajouter plusieurs variables
+- Ajouter plusieur variables
 - Créer plusieurs commits
 - Une github-page
 
-### Ma github page
-- https://zelara.github.io/4w4-2024-gr2/
+#### GitHub page
+ - https://yannick-btn.github.io/4w4-2024-gr2/

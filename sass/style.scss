@@ -1,7 +1,7 @@
 /*
 Theme Name: theme-gr2
 Theme URI: https://referenced.ca
-Author: Eddy Martin
+Author: James Ling
 Author URI: https://wordpress.org/
 Description: Thème de base développé dans le cours 4W4
 Version: 1.0
@@ -26,10 +26,14 @@ Ce thème a été développé dans le cadre du cours 4W4
 @import "base/h";
 
 /* ////////////////////////////////////////// */
-/* règles de la pagination                             */
+/* règles de la pagination                    */
 /* ////////////////////////////////////////// */
 @import "layout";
 
 @import "effet/vague";
 
-@import "effet/diagonale";
+@import "effet/diagonal";
+
+@import "base/liens";
+
+@import "base/boutton";

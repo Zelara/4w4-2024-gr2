@@ -1,5 +1,5 @@
 /*
-Sélecteur textuel de base
+Sélecteur textuel de baset
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
@@ -7,21 +7,36 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 */
 
 h1 {
-    font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-
+  font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
+  // color : var(--coulleur-entete);
+  // background-color: var(--couleur-arriere-entete-texte);
 }
-h2 { 
-    font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
-
+h2 {
+  font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+  //     color : var(--couleur-accueil);
+  //     background-color: var(--couleur-arriere-texte);
 }
 h3 {
-
+  font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+  // color: var(--couleur-evenement);
+  // background-color: var(--couleur-arriere-texte);
 }
-h4 {}
-h5 {}
-h6 {}
+h4 {
+  font-size: clamp(0.375rem, 2.6319rem + -14.4444vw, 2rem);
+  // color: var(--coulleur-rose);
+  // background-color: var(--couleur-arriere-texte);
+}
+h5 {
+  font-size: clamp(1.875rem, -0.4688rem + 7.5vw, 3.75rem);
+}
+h6 {
+  font-size: clamp(2.5rem, 0.1563rem + 7.5vw, 4.375rem);
+}
 
-p {}
+p {
+  font-size: clamp(0.9375rem, -0.2344rem + 3.75vw, 1.875rem);
+}
 
-hr {}
-
+hr {
+  font-size: clamp(2.375rem, 0.2656rem + 6.75vw, 4.0625rem);
+}

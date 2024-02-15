@@ -32,8 +32,7 @@ body {
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
-  z-index: 1;
-  background-color: linear-gradient(
+  background: linear-gradient(
     180deg,
     var(--couleur-arriere-accueil),
     var(--couleur-arriere-evenement)

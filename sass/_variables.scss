@@ -1,49 +1,47 @@
-
 /*
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
-/*
+  /*
     --couleur-arriere-entete: #77c2e5;
-    --couleur-arriere-accueil: #c1d32d;
-    --couleur-arriere-evenement: #dd8211;
-    --couleur-arriere-galerie: #8cee99;
-    --couleur-arriere-footer: #1d3f9f;
+    --couleur-arriere-accueil: #d8b907;
+    --couleur-arriere-evenement: #09c2e2;
+    --couleur-arriere-galerie: #0bc3e4;
+    --couleur-arriere-footer: #14ce52;
+    --couleur-rouge: #851919;
+    --coulleur-rose: #cc1cc3;
+    --coulleur-bleu: #1000f1;
+    --coulleur-vert-foncer: #236405;
+    --couleur-arriere-entete-texte: #1d2479;
+    --couleur-arriere-texte: #13e21383;
 */
 
---nb-element : 5;
---increment-angle : calc(360 / var(--nb-element));
-/* 360/5 = 72) */
---angle-initial : 180;
-/* couleur arrière plan */
---s-couleur-arriere : 100%; // saturation
---l-couleur-arriere : 50%;  // luminosité
-/* couleur avant plan */
---s-couleur : 100%; // saturation
---l-couleur : 80%; // luminosité
+  --couleur-noir: black;
+  --couleur-vert: #4caf50;
+  --couleur-blanc: #fff;
 
---hu1 : var(--angle-initial);
---hu2 : calc(var(--hu1) + var(--increment-angle));
---hu3 : calc(var(--hu2) + var(--increment-angle));
---hu4 : calc(var(--hu3) + var(--increment-angle));
---hu5 : calc(var(--hu4) + var(--increment-angle));
+  --nb-element: 5;
+  --increment-angle: calc(360 / var(--nb-element));
+  //360 / 5 = 72
+  --angle-initial: 360;
 
+  --hu1: var(--angle-initial);
+  --hu2: calc(var(--hu1) + var(--increment-angle));
+  --hu3: calc(var(--hu2) + var(--increment-angle));
+  --hu4: calc(var(--hu3) + var(--increment-angle));
+  --hu5: calc(var(--hu4) + var(--increment-angle));
 
+  /* couleur arriere plan */
+  --s-couleur-arriere: 100%; // saturation
+  --l-couleur-arriere: 50%; // luminosité
+  /* couleur avant plant */
+  --s-couleur: 100%; // saturation
+  --l-couleur: 80%; // luminosité
 
-    --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-accueil: hsl(var(--hu2),var(--s-couleur-arriere),  var(--l-couleur-arriere));
-    --couleur-arriere-evenement: hsl(var(--hu3),var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-galerie: hsl(var(--hu4),var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-footer: hsl(var(--hu5),var(--s-couleur-arriere), var(--l-couleur-arriere));
-
-    --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
-    --couleur-accueil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
-    --couleur-evenement: hsl(var(--hu3), var(--s-couleur),var(--l-couleur));
-    --couleur-galerie: hsl(var(--hu4), var(--s-couleur),var(--l-couleur));
-    --couleur-footer: hsl(var(--hu5), var(--s-couleur),var(--l-couleur));
-
-
+  --hu2: calc(var(--hu1) + 180); //couleur complementaire
+  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
+  --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+  --couleur-arriere-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
+  --couleur-arriere-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
+  --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
 }
-
-
-
