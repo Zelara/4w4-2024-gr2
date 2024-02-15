@@ -36,7 +36,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --l-couleur-arriere: 50%;
   /* couleur avant plan */
   --s-couleur: 100%;
-  --l-couleur: 15%;
+  --l-couleur: 80%;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
@@ -91,13 +91,13 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  background-color: rgba(0, 0, 0, 0.05);
   padding: 5rem 1rem;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #accueil {
@@ -108,14 +108,56 @@ body {
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
+  z-index: 1;
+  background-color: linear-gradient(180deg, var(--couleur-arriere-accueil), var(--couleur-arriere-evenement));
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
+  position: relative;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 64px;
+}
+
+.vague .shape-fill {
+  fill: #FFFFFF;
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: skewY(-5deg);
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
