@@ -17,4 +17,4 @@ A réaliser :
 - Une github-page
 
 #### GitHub page
- - https://yannick-btn.github.io/4w4-2024-gr2/
+ - https://zelara.github.io/4w4-2024-gr2/
