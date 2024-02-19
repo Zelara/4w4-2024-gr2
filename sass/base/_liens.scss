@@ -1,4 +1,14 @@
 a {
-  color: var(--couleur-noir);
+  color: pink;
   font-size: 1.5rem;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--couleur-lien-hover);
+  }
+
+  &:visited {
+    color: var(--couleur-lien-visited);
+  }
 }

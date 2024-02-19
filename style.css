@@ -20,19 +20,6 @@ Ce thème a été développé dans le cadre du cours 4W4
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
-  /*
-      --couleur-arriere-entete: #77c2e5;
-      --couleur-arriere-accueil: #d8b907;
-      --couleur-arriere-evenement: #09c2e2;
-      --couleur-arriere-galerie: #0bc3e4;
-      --couleur-arriere-footer: #14ce52;
-      --couleur-rouge: #851919;
-      --coulleur-rose: #cc1cc3;
-      --coulleur-bleu: #1000f1;
-      --coulleur-vert-foncer: #236405;
-      --couleur-arriere-entete-texte: #1d2479;
-      --couleur-arriere-texte: #13e21383;
-  */
   --couleur-noir: black;
   --couleur-vert: #4caf50;
   --couleur-blanc: #fff;
@@ -56,11 +43,16 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --couleur-arriere-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
   --couleur-arriere-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
   --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
-  --couleur-entete: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
-  --couleur-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
-  --couleur-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
-  --couleur-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 35%);
-  --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 40%);
+  --couleur-entete: hsl(var(--hu1), var(--s-couleur-arriere), 10%);
+  --couleur-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 15%);
+  --couleur-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
+  --couleur-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
+  --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
+  --couleur-lien: #ead196;
+  --couleur-lien-hover: #f3edc8;
+  --couleur-lien-visited: #00308f;
+  --couleur-bouton-rouge: rgba(167, 0, 0, 1);
+  --couleur-bouton-rouge-pale: rgba(255, 123, 123, 1);
 }
 
 /* ////////////////////////////////////////// */
@@ -86,7 +78,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(0.375rem, 2.6319rem - 14.4444vw, 2rem);
+  font-size: clamp(1.1rem, -0.59rem + 6.4vw, 3.9rem);
 }
 
 h5 {
@@ -200,21 +192,34 @@ body {
 }
 
 a {
-  color: var(--couleur-noir);
+  color: pink;
   font-size: 1.5rem;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: var(--couleur-lien-hover);
+}
+a:visited {
+  color: var(--couleur-lien-visited);
 }
 
 button {
-  padding: 1rem 2rem;
   font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 2.5rem);
+  padding: 1rem 2rem;
+  background-image: linear-gradient(90deg, var(--couleur-bouton-rouge) 0%, var(--couleur-bouton-rouge-pale) 100%);
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   border-radius: 5px;
-  background-color: var(--couleur-vert);
   color: var(--couleur-blanc);
-  border: none;
   cursor: pointer;
+  transition-property: transform 2s;
+  transform: scale(1) translateY(0);
+}
+button:hover {
+  background-image: linear-gradient(90deg, var(--couleur-bouton-rouge-pale) 0%, var(--couleur-bouton-rouge) 100%);
+  transform: scale(1.05) translateY(-1rem);
+}
+button:active, button:visited {
+  background-image: linear-gradient(90deg, var(--couleur-bouton-rouge) 0%, var(--couleur-bouton-rouge-pale) 100%);
 }
 
 .entete__header {

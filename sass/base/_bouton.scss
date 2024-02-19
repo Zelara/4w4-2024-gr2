@@ -1,12 +1,33 @@
 button {
-  padding: 1rem 2rem;
   font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 2.5rem);
+  padding: 1rem 2rem;
+  background-image: linear-gradient(
+    90deg,
+    var(--couleur-bouton-rouge) 0%,
+    var(--couleur-bouton-rouge-pale) 100%
+  );
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   border-radius: 5px;
-  background-color: var(--couleur-vert);
   color: var(--couleur-blanc);
-  border: none;
   cursor: pointer;
+  transition-property: transform 2s;
+  transform: scale(1) translateY(0);
+
+  &:hover {
+    background-image: linear-gradient(
+      90deg,
+      var(--couleur-bouton-rouge-pale) 0%,
+      var(--couleur-bouton-rouge) 100%
+    );
+    transform: scale(1.05) translateY(-1rem);
+  }
+
+  &:active,
+  &:visited {
+    background-image: linear-gradient(
+      90deg,
+      var(--couleur-bouton-rouge) 0%,
+      var(--couleur-bouton-rouge-pale) 100%
+    );
+  }
 }

@@ -2,20 +2,6 @@
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
-  /*
-    --couleur-arriere-entete: #77c2e5;
-    --couleur-arriere-accueil: #d8b907;
-    --couleur-arriere-evenement: #09c2e2;
-    --couleur-arriere-galerie: #0bc3e4;
-    --couleur-arriere-footer: #14ce52;
-    --couleur-rouge: #851919;
-    --coulleur-rose: #cc1cc3;
-    --coulleur-bleu: #1000f1;
-    --coulleur-vert-foncer: #236405;
-    --couleur-arriere-entete-texte: #1d2479;
-    --couleur-arriere-texte: #13e21383;
-*/
-
   --couleur-noir: black;
   --couleur-vert: #4caf50;
   --couleur-blanc: #fff;
@@ -38,6 +24,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --s-couleur: 100%; // saturation
   --l-couleur: 80%; // luminosité
 
+  // Variables pour les arrières plans
   --hu2: calc(var(--hu1) + 180); //couleur complementaire
   --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
   --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
@@ -45,9 +32,18 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --couleur-arriere-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
   --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
 
-  --couleur-entete: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
-  --couleur-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
-  --couleur-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
-  --couleur-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 35%);
-  --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 40%);
+  // Variables pour le texte
+  --couleur-entete: hsl(var(--hu1), var(--s-couleur-arriere), 10%);
+  --couleur-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 15%);
+  --couleur-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
+  --couleur-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
+  --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
+
+  // Variables pour les liens
+  --couleur-lien: #ead196;
+  --couleur-lien-hover: #f3edc8;
+  --couleur-lien-visited: #00308f;
+
+  --couleur-bouton-rouge: rgba(167, 0, 0, 1);
+  --couleur-bouton-rouge-pale: rgba(255, 123, 123, 1);
 }
