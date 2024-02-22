@@ -286,5 +286,5 @@ blockquote {
 }
 
 .sociaux svg {
-  fill: red;
+  fill: var(--couleur-bouton-rouge);
 }/*# sourceMappingURL=style.css.map */

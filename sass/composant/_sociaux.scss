@@ -1,9 +1,9 @@
-.sociaux{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+.sociaux {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .sociaux svg {
-    fill: red;
+  fill: var(--couleur-bouton-rouge);
 }
