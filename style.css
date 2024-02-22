@@ -151,6 +151,81 @@ body {
   color: var(--couleur-footer);
 }
 
+a {
+  color: pink;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: var(--couleur-lien-hover);
+}
+a:visited {
+  color: var(--couleur-lien-visited);
+}
+
+button.entete__button {
+  font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 2.5rem);
+  padding: 1rem 2rem;
+  background-image: linear-gradient(90deg, var(--couleur-bouton-rouge) 0%, var(--couleur-bouton-rouge-pale) 100%);
+  text-align: center;
+  border-radius: 5px;
+  color: var(--couleur-blanc);
+  cursor: pointer;
+  transition-property: transform 2s;
+  transform: scale(1) translateY(0);
+}
+button.entete__button:hover {
+  background-image: linear-gradient(90deg, var(--couleur-bouton-rouge-pale) 0%, var(--couleur-bouton-rouge) 100%);
+  transform: scale(1.05) translateY(-1rem);
+}
+button.entete__button:active, button.entete__button:visited {
+  background-image: linear-gradient(90deg, var(--couleur-bouton-rouge) 0%, var(--couleur-bouton-rouge-pale) 100%);
+}
+
+@media screen and (min-width: 500px) {
+  #entete {
+    text-align: left;
+  }
+  .entete__header {
+    background-position: 100% 50%;
+  }
+}
+span {
+  color: var(--couleur-vert);
+}
+
+blockquote {
+  background-color: var(--couleur-bouton-rouge-pale);
+}
+
+/* ////////////////////////////////////////// */
+/* les sections de la page                    */
+/* ////////////////////////////////////////// */
+.entete__header {
+  background-image: url("images/fille-anime.png");
+  background-repeat: no-repeat;
+  background-position: center 50%;
+}
+
+.entete__header span {
+  display: block;
+}
+
+#entete {
+  text-align: center;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ////////////////////////////////////////// */
+/* les effets                                 */
+/* ////////////////////////////////////////// */
 .vague {
   position: absolute;
   bottom: -1px;
@@ -191,63 +266,25 @@ body {
   background: var(--couleur-arriere-galerie);
 }
 
-a {
-  color: pink;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-a:hover, a:focus {
-  color: var(--couleur-lien-hover);
-}
-a:visited {
-  color: var(--couleur-lien-visited);
+/* ////////////////////////////////////////// */
+/* les composants                             */
+/* ////////////////////////////////////////// */
+.recherche {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
 }
 
-button {
-  font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 2.5rem);
-  padding: 1rem 2rem;
-  background-image: linear-gradient(90deg, var(--couleur-bouton-rouge) 0%, var(--couleur-bouton-rouge-pale) 100%);
-  text-align: center;
-  border-radius: 5px;
-  color: var(--couleur-blanc);
-  cursor: pointer;
-  transition-property: transform 2s;
-  transform: scale(1) translateY(0);
-}
-button:hover {
-  background-image: linear-gradient(90deg, var(--couleur-bouton-rouge-pale) 0%, var(--couleur-bouton-rouge) 100%);
-  transform: scale(1.05) translateY(-1rem);
-}
-button:active, button:visited {
-  background-image: linear-gradient(90deg, var(--couleur-bouton-rouge) 0%, var(--couleur-bouton-rouge-pale) 100%);
-}
-
-.entete__header {
-  background-image: url("images/fille-anime.png");
-  background-repeat: no-repeat;
-  background-position: center 50%;
-}
-
-.entete__header span {
+.recherche__input {
   display: block;
 }
 
-#entete {
-  text-align: center;
+.sociaux {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-@media screen and (min-width: 500px) {
-  #entete {
-    text-align: left;
-  }
-  .entete__header {
-    background-position: 100% 50%;
-  }
-}
-span {
-  color: var(--couleur-vert);
-}
-
-blockquote {
-  background-color: var(--couleur-bouton-rouge-pale);
+.sociaux svg {
+  fill: red;
 }/*# sourceMappingURL=style.css.map */
