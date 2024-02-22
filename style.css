@@ -243,4 +243,11 @@ button:active, button:visited {
   .entete__header {
     background-position: 100% 50%;
   }
+}
+span {
+  color: var(--couleur-vert);
+}
+
+blockquote {
+  background-color: var(--couleur-bouton-rouge-pale);
 }/*# sourceMappingURL=style.css.map */
