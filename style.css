@@ -225,9 +225,22 @@ button:active, button:visited {
 .entete__header {
   background-image: url("images/fille-anime.png");
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: center 50%;
 }
 
 .entete__header span {
   display: block;
+}
+
+#entete {
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  #entete {
+    text-align: left;
+  }
+  .entete__header {
+    background-position: 100% 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
