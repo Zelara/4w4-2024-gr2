@@ -182,14 +182,6 @@ button.entete__button:active, button.entete__button:visited {
   background-image: linear-gradient(90deg, var(--couleur-bouton-rouge) 0%, var(--couleur-bouton-rouge-pale) 100%);
 }
 
-@media screen and (min-width: 500px) {
-  #entete {
-    text-align: left;
-  }
-  .entete__header {
-    background-position: 100% 50%;
-  }
-}
 span {
   color: var(--couleur-vert);
 }
@@ -215,6 +207,14 @@ blockquote {
   text-align: center;
 }
 
+@media screen and (min-width: 500px) {
+  .entete__header {
+    background-position: 100% 50%;
+  }
+  #entete {
+    text-align: left;
+  }
+}
 .footer__section {
   display: flex;
   flex-direction: column;

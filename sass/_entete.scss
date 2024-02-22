@@ -11,3 +11,12 @@
 #entete {
   text-align: center;
 }
+
+@media screen and (min-width: 500px) {
+  .entete__header {
+    background-position: 100% 50%;
+  }
+  #entete {
+    text-align: left;
+  }
+}
