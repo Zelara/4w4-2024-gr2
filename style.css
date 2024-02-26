@@ -78,11 +78,11 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1.1rem, -0.59rem + 6.4vw, 3.9rem);
+  font-size: clamp(1rem, -0.59rem + 6.4vw, 1.6rem);
 }
 
 h5 {
-  font-size: clamp(1.875rem, -0.4688rem + 7.5vw, 3.75rem);
+  font-size: clamp(1rem, -0.4688rem + 7.5vw, 1.5rem);
 }
 
 h6 {
@@ -287,4 +287,20 @@ blockquote {
 
 .sociaux svg {
   fill: var(--couleur-bouton-rouge);
+}
+
+.section__cours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.carte {
+  padding: 0.2rem;
+  border: 1px solid var(--couleur-noir);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 23%;
+  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
 }/*# sourceMappingURL=style.css.map */

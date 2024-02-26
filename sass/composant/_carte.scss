@@ -1,0 +1,15 @@
+.section__cours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.carte {
+    padding: 0.2rem;
+    border: 1px solid var(--couleur-noir);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 23%;
+    background-color: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
+}
