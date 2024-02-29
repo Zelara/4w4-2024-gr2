@@ -48,7 +48,7 @@
         if (have_posts()) :
           while (have_posts()) : the_post();
             $titre = get_the_title();
-            $titre2 = substr($titre, 0, -6);
+            $titre2 = substr($titre, 7, -6);
             $sigle = substr($titre, 0, 7);
             $heure = substr($titre, -6);
             // strpos()
