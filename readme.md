@@ -1,5 +1,9 @@
 # Labo #3
 ## Création d'un site WP.
+
+- James Ling
+- Réalisations: j'ai fait la page
+
 - Adaptation du thème de exercice #1
 - Création du modèle index.php
 - Création de la branche labo3

@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/normalize.css'; ?>" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>" />
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
@@ -46,13 +46,18 @@
 
         <?php
         if (have_posts()) :
-          while (have_posts()) : the_post(); 
-          $titre = get_the_title();
-          $sigle = substr($titre, 0, 3);
-          ?>
+          while (have_posts()) : the_post();
+            $titre = get_the_title();
+            $titre2 = substr($titre, 0, -6);
+            $sigle = substr($titre, 0, 7);
+            $heure = substr($titre, -6);
+            // strpos()
+        ?>
             <div class="carte">
-              <h4> <?php echo $titre; ?></h4>
-              <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>
+              <h5> <?php echo $sigle; ?></h5>
+              <h4> <?php echo $titre2; ?></h4>
+              <p> <?php echo wp_trim_words(get_the_content(), 30); ?></p>
+              <h5> <?php echo $heure ?></h5>
             </div>
           <?php endwhile; ?>
         <?php endif; ?>

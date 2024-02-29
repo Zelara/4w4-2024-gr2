@@ -78,7 +78,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1rem, -0.59rem + 6.4vw, 1.6rem);
+  font-size: clamp(0.45rem, -0.59rem + 6.4vw, 0.9rem);
 }
 
 h5 {
@@ -90,7 +90,7 @@ h6 {
 }
 
 p {
-  font-size: clamp(0.9375rem, -0.2344rem + 3.75vw, 1.875rem);
+  font-size: clamp(0.6rem, -0.2344rem + 3.75vw, 1rem);
 }
 
 hr {
@@ -292,6 +292,7 @@ blockquote {
 .section__cours {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -301,6 +302,12 @@ blockquote {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0 1 23%;
+  flex: 0 0 100%;
   background-color: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
+}
+
+@media screen and (min-width: 500px) {
+  .carte {
+    flex: 0 1 23%;
+  }
 }/*# sourceMappingURL=style.css.map */
