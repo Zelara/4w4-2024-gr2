@@ -15,11 +15,16 @@
 </head>
 
 <body>
+  <div id="menu" class="global">
+    <div class="entete__menu">
+      <?php wp_nav_menu() ?>
+    </div>
+  </div>
   <div id="entete" class="global">
     <header class="entete__header">
-      <h1>Thème du groupe #2</h1>
-      <h2>4W4 - Conception d'interface et <span>développement Web</span></h2>
-      <h3>TIM - Collège de Maisonneuve</h3>
+      <h1 class="bgc-text">Thème du groupe #2</h1>
+      <h2 class="bgc-text">4W4 - Conception d'interface et <span>développement Web</span></h2>
+      <h3 class="bgc-text">TIM - Collège de Maisonneuve</h3>
       <button class="entete__button">Événements</button>
     </header>
     <div class="vague">
@@ -48,16 +53,17 @@
         if (have_posts()) :
           while (have_posts()) : the_post();
             $titre = get_the_title();
-            $titre2 = substr($titre, 7, -6);
             $sigle = substr($titre, 0, 7);
-            $heure = substr($titre, -6);
+            $pos_paranthese = strpos($titre, '(');
+            $duree = substr($titre, $pos_paranthese + 1, -1);
+            $titre = substr($titre, 7, $pos_paranthese - 7);
             // strpos()
         ?>
             <div class="carte">
               <h5> <?php echo $sigle; ?></h5>
-              <h4> <?php echo $titre2; ?></h4>
+              <h4> <?php echo $titre ?></h4>
               <p> <?php echo wp_trim_words(get_the_content(), 30); ?></p>
-              <h5> <?php echo $heure ?></h5>
+              <h5>Durée: <?php echo $duree ?></h5>
             </div>
           <?php endwhile; ?>
         <?php endif; ?>

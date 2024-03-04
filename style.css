@@ -57,6 +57,19 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 }
 
 /* ////////////////////////////////////////// */
+/* Class utile                                */
+/* ////////////////////////////////////////// */
+.bgc-text {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.1rem 0.1rem;
+}
+@media screen and (min-width: 1100px) {
+  .bgc-text {
+    background-color: transparent;
+  }
+}
+
+/* ////////////////////////////////////////// */
 /* règles de base                             */
 /* ////////////////////////////////////////// */
 /*
@@ -115,7 +128,8 @@ body {
 
 .global > section,
 .global > header,
-.global > footer {
+.global > footer,
+.global > .entete__menu {
   flex: 0 1 1100px;
   padding: 5rem 1rem;
 }
@@ -302,14 +316,33 @@ blockquote {
   border: 1px solid var(--couleur-noir);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 100%;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 252.5px;
   background-color: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
   box-shadow: var(--couleur-box-shadow) 0px 3px 8px;
+}
+
+.carte * {
+  text-align: center;
 }
 
 @media screen and (min-width: 500px) {
   .carte {
     flex: 0 1 23%;
   }
+}
+.entete__menu {
+  border: 1px solid var(--couleur-noir);
+}
+
+.menu-entete-container {
+  border: 1px solid var(--couleur-noir);
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */
