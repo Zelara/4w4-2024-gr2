@@ -14,13 +14,26 @@
 // </div>
 
 .entete__menu {
-    border: 1px solid var(--couleur-noir);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .menu-entete-container {
   // div
-  border: 1px solid var(--couleur-noir);
+  border: 2px solid var(--couleur-noir);
   width: 100%;
+}
+
+#menu {
+  border-bottom: 2px solid var(--couleur-noir);
+  background: var(--degrader-rouge1);
+  background: linear-gradient(
+    0deg,
+    var(--degrader-rouge1) 0%,
+    var(--degrader-rouge2) 100%
+  );
 }
 
 .menu {
@@ -31,4 +44,13 @@
 }
 .menu-item {
   // li
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  width: 10rem;
+  border: 2px solid black;
+  background-color: var(--couleur-blanc);
+  border-radius: 50%;
 }

@@ -21,8 +21,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
   --couleur-noir: black;
-  --couleur-vert: #4caf50;
+  --couleur-vert: #819171;
   --couleur-blanc: #fff;
+  --degrader-rouge1: rgb(223, 27, 27);
+  --degrader-rouge2: rgba(186, 48, 48, 1);
   --nb-element: 5;
   --increment-angle: calc(360 / var(--nb-element));
   --angle-initial: 360;
@@ -50,7 +52,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
   --couleur-lien: #ead196;
   --couleur-lien-hover: #f3edc8;
-  --couleur-lien-visited: #00308f;
+  --couleur-lien-visited: #4caf50;
   --couleur-bouton-rouge: rgba(167, 0, 0, 1);
   --couleur-bouton-rouge-pale: rgba(255, 123, 123, 1);
   --couleur-box-shadow: rgba(0, 0, 0, 0.24);
@@ -168,7 +170,7 @@ body {
 
 a {
   color: pink;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -333,16 +335,37 @@ blockquote {
   }
 }
 .entete__menu {
-  border: 1px solid var(--couleur-noir);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .menu-entete-container {
-  border: 1px solid var(--couleur-noir);
+  border: 2px solid var(--couleur-noir);
   width: 100%;
+}
+
+#menu {
+  border-bottom: 2px solid var(--couleur-noir);
+  background: var(--degrader-rouge1);
+  background: linear-gradient(0deg, var(--degrader-rouge1) 0%, var(--degrader-rouge2) 100%);
 }
 
 .menu {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  width: 10rem;
+  border: 2px solid black;
+  background-color: var(--couleur-blanc);
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

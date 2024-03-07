@@ -3,8 +3,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
   --couleur-noir: black;
-  --couleur-vert: #4caf50;
+  --couleur-vert: #819171;
   --couleur-blanc: #fff;
+
+  --degrader-rouge1: rgb(223, 27, 27);
+  --degrader-rouge2: rgba(186, 48, 48, 1);
 
   --nb-element: 5;
   --increment-angle: calc(360 / var(--nb-element));
@@ -42,7 +45,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   // Variables pour les liens
   --couleur-lien: #ead196;
   --couleur-lien-hover: #f3edc8;
-  --couleur-lien-visited: #00308f;
+  --couleur-lien-visited: #4caf50;
 
   --couleur-bouton-rouge: rgba(167, 0, 0, 1);
   --couleur-bouton-rouge-pale: rgba(255, 123, 123, 1);
