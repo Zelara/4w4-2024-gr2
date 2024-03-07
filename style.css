@@ -382,7 +382,9 @@ blockquote {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-top: 1rem;
   padding-left: 1rem;
+  font-weight: bold;
 }
 @media screen and (min-width: 550px) {
   #menu-principal {
