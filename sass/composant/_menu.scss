@@ -19,7 +19,15 @@
   transition: transform 0.8s;
 
   @media screen and (min-width: 550px) {
-    position: static;
+    background: var(--degrader-rouge1);
+    background: linear-gradient(
+      0deg,
+      var(--degrader-rouge1) 0%,
+      var(--degrader-rouge2) 100%
+    );
+    transform: translateX(0);
+    border: 2px solid black;
+    width: 100%;
   }
 }
 
@@ -33,7 +41,6 @@
 
 #menu {
   @media screen and (min-width: 550px) {
-    border-bottom: 2px solid var(--couleur-noir);
     background: var(--degrader-rouge1);
     background: linear-gradient(
       0deg,
@@ -51,8 +58,8 @@
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding-top: 1rem;
+  gap: 0.5rem;
+  padding-top: 1.5rem;
   padding-left: 1rem;
   font-weight: bold;
   @media screen and (min-width: 550px) {
@@ -70,7 +77,6 @@
   width: 8.5rem;
   border: 2px solid black;
   background-color: var(--couleur-blanc);
-  border-radius: 50%;
 }
 
 #chk_burger {
@@ -83,6 +89,7 @@
 
 #burger {
   display: block;
+
   position: fixed;
   top: 0.7rem;
   left: 0.7rem;

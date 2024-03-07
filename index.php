@@ -14,7 +14,7 @@
 </div>
 <div id="accueil" class="global">
   <section class="accueil__section">
-    <h2>Accueil (h2)</h2>
+    <h2>Accueil</h2>
     <div class="section__cours">
 
 
@@ -52,7 +52,7 @@
 </div>
 <div id="galerie" class="global diagonal">
   <section class="galerie__section">
-    <h2>Galerie (h2)</h2>
+    <h2>Galerie</h2>
     <a href="#">Livre 1984</a>
     <blockquote>
       <p>
