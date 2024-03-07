@@ -1,19 +1,17 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: "prompt", Arial, Helvetica, sans-serif;
 }
 
 .global {
+  font-family: "Indie Flower", cursive;
   display: flex;
   justify-content: center;
-  min-height: 30vh;
+  // min-height: 30vh;
 }
 
 .global > section,
-.global > header,
-.global > footer,
-.global > .entete__menu {	
+.global > footer {
   // flex : grow shrink basis
   flex: 0 1 1100px;
   // border : 1px solid #aaa;
@@ -21,8 +19,13 @@ body {
   padding: 5rem 1rem;
 }
 
-.global > header {
-  flex: 0 1 1300px;
+.entete__menu {
+  flex: 0 1 1500px;
+  // min-height: 50vh;
+  position: relative;
+  @media screen and (min-width: 550px) {
+    padding: 1rem 0 0 0;
+  }
 }
 
 #entete {

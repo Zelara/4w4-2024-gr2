@@ -16,6 +16,8 @@
   transform: rotateY(180deg);
 }
 
-.vague .shape-fill {
-  fill: #ffffff;
+// style="fill: var(--couleur-arriere-accueil)"
+// style="fill: var(--couleur-arriere-footer)
+.remplissage {
+  fill: var(--_couleur-arriere-vague);
 }

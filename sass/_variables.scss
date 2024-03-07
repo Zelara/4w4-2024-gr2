@@ -52,3 +52,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 
   --couleur-box-shadow: rgba(0, 0, 0, 0.24);
 }
+
+#entete {
+  --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+}
+
+#evenement {
+  --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
+}
