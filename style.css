@@ -346,11 +346,11 @@ blockquote {
   }
 }
 .menu-principal-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   transform: translateX(-100%);
-  z-index: 1;
+  z-index: 5;
   transition: transform 0.8s;
 }
 @media screen and (min-width: 550px) {
@@ -396,8 +396,8 @@ blockquote {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 5rem;
-  width: 10rem;
+  height: 3.5rem;
+  width: 8.5rem;
   border: 2px solid black;
   background-color: var(--couleur-blanc);
   border-radius: 50%;
@@ -413,10 +413,10 @@ blockquote {
 
 #burger {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0.7rem;
   left: 0.7rem;
-  z-index: 2;
+  z-index: 6;
 }
 @media screen and (min-width: 550px) {
   #burger {
