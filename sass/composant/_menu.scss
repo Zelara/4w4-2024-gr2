@@ -22,6 +22,9 @@
 
 .menu-entete-container {
   // div
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   border: 2px solid var(--couleur-noir);
   width: 100%;
 }
@@ -39,6 +42,9 @@
 .menu {
   // ul
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: space-around;
   list-style-type: none;
 }
