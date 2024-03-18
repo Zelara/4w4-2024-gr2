@@ -23,6 +23,11 @@
 
 @media screen and (min-width: 550px) {
   .carte {
-    flex: 0 1 23%;
+    flex: 1 1 23%;
   }
+}
+
+.carte .post-categories {
+  list-style-type: none;
+  display: flex;
 }
