@@ -39,14 +39,6 @@
   align-items: center;
   padding-left: 1.5rem;
   border-bottom: 2px solid var(--couleur-noir);
-  @media screen and (min-width: 550px) {
-    background: var(--degrader-rouge1);
-    background: linear-gradient(
-      0deg,
-      var(--degrader-rouge1) 0%,
-      var(--degrader-rouge2) 100%
-    );
-  }
 }
 
 #menu-principal {

@@ -2,7 +2,7 @@
 
 - James Ling
 - C'est une page pour un club de voyage.
-- Github-page: 
+- Github-page: https://zelara.github.io/4w4-2024-gr2/
 
 - Compléter l'utilisation du mapping de couleurs avec boucle et mixin (1 point)
 

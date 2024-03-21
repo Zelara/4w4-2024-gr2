@@ -18,8 +18,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
+<!-- clr-primaire-100 bck-primaire-400 -->
+
 <body>
-    <div id="menu" class="global">
+    <div id="menu" class="global clr-agencement-rouge">
         <!-- Permet d'ajouter un logo qui a été choisi à l'aide du customiser -->
         <?php echo get_custom_logo() ?>
         <header class="entete__menu">

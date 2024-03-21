@@ -66,6 +66,154 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
 }
 
+.clr-primaire-100 {
+  color: hsl(220, 100%, 85%);
+}
+
+.bck-primaire-100 {
+  background-color: hsl(220, 100%, 85%);
+}
+
+.clr-primaire-200 {
+  color: hsl(220, 100%, 60%);
+}
+
+.bck-primaire-200 {
+  background-color: hsl(220, 100%, 60%);
+}
+
+.clr-primaire-300 {
+  color: hsl(220, 100%, 30%);
+}
+
+.bck-primaire-300 {
+  background-color: hsl(220, 100%, 30%);
+}
+
+.clr-primaire-400 {
+  color: hsl(220, 100%, 15%);
+}
+
+.bck-primaire-400 {
+  background-color: hsl(220, 100%, 15%);
+}
+
+.clr-secondaire-100 {
+  color: hsl(40, 100%, 85%);
+}
+
+.bck-secondaire-100 {
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-secondaire-200 {
+  color: hsl(40, 100%, 50%);
+}
+
+.bck-secondaire-200 {
+  background-color: hsl(40, 100%, 50%);
+}
+
+.clr-secondaire-300 {
+  color: hsl(40, 100%, 30%);
+}
+
+.bck-secondaire-300 {
+  background-color: hsl(40, 100%, 30%);
+}
+
+.clr-secondaire-400 {
+  color: hsl(40, 100%, 15%);
+}
+
+.bck-secondaire-400 {
+  background-color: hsl(40, 100%, 15%);
+}
+
+.clr-rouge-100 {
+  color: hsl(0, 78%, 49%);
+}
+
+.bck-rouge-100 {
+  background-color: hsl(0, 78%, 49%);
+}
+
+.clr-rouge-200 {
+  color: hsl(0, 73%, 48%);
+}
+
+.bck-rouge-200 {
+  background-color: hsl(0, 73%, 48%);
+}
+
+.clr-rouge-300 {
+  color: hsl(0, 70%, 48%);
+}
+
+.bck-rouge-300 {
+  background-color: hsl(0, 70%, 48%);
+}
+
+.clr-rouge-400 {
+  color: hsl(0, 64%, 48%);
+}
+
+.bck-rouge-400 {
+  background-color: hsl(0, 64%, 48%);
+}
+
+.clr-vert-100 {
+  color: hsl(70, 100%, 85%);
+}
+
+.bck-vert-100 {
+  background-color: hsl(70, 100%, 85%);
+}
+
+.clr-vert-200 {
+  color: hsl(70, 100%, 50%);
+}
+
+.bck-vert-200 {
+  background-color: hsl(70, 100%, 50%);
+}
+
+.clr-vert-300 {
+  color: hsl(70, 100%, 30%);
+}
+
+.bck-vert-300 {
+  background-color: hsl(70, 100%, 30%);
+}
+
+.clr-vert-400 {
+  color: hsl(70, 100%, 15%);
+}
+
+.bck-vert-400 {
+  background-color: hsl(70, 100%, 15%);
+}
+
+.clr-agencement-primaire {
+  color: hsl(220, 100%, 15%);
+  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+}
+
+.clr-agencement-secondaire {
+  color: hsl(40, 100%, 15%);
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-agencement-rouge {
+  color: hsl(0, 64%, 48%);
+  background-color: hsl(0, 78%, 49%);
+}
+
+.clr-agencement-vert {
+  color: hsl(70, 100%, 15%);
+  background-color: hsl(70, 100%, 85%);
+}
+
 /* ////////////////////////////////////////// */
 /* Class utile                                */
 /* ////////////////////////////////////////// */
@@ -376,12 +524,6 @@ blockquote {
   align-items: center;
   padding-left: 1.5rem;
   border-bottom: 2px solid var(--couleur-noir);
-}
-@media screen and (min-width: 550px) {
-  #menu {
-    background: var(--degrader-rouge1);
-    background: linear-gradient(0deg, var(--degrader-rouge1) 0%, var(--degrader-rouge2) 100%);
-  }
 }
 
 #menu-principal {
