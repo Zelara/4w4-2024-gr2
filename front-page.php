@@ -35,20 +35,22 @@
 
   </section>
 </div>
-<div id="galerie" class="global diagonal">
-  <section class="galerie__section">
-    <h2>Galerie</h2>
-    <a href="#">Livre 1984</a>
-    <blockquote>
-      <p>
-        “La liberté, c'est la liberté de dire que deux et deux font quatre.
-        Lorsque cela est accordé, le reste suit.” “La guerre, c'est la paix,
-        la liberté c'est l'esclavage,<span>
-          l'ignorance c'est la force.</span>” “Les intellectuels sont portés au totalitarisme bien plus que les
-        gens ordinaires.”
-      </p>
-      <p>par George Orwell</p>
-    </blockquote>
+<div id="destinations" class="global diagonal">
+  <section class="section__cours">
+    <h2>Les destinations les plus populaires </h2>
+
+    <?php
+    $categories = get_categories();
+
+    foreach ($categories as $category) : ?>
+      <div class="carte">
+        <h4><?php echo $category->name; ?></h4>
+        <p><?php echo wp_trim_words($category->description, 10); ?></p>
+        <p><?php echo sprintf(_n('%d Article', '%d Articles', $category->count), $category->count); ?></p>
+        <p><a href="<?php echo esc_url(add_query_arg('cat', $category->term_id, get_category_link($category->term_id))); ?>">Voir tous les articles</a></p>
+      </div>
+    <?php endforeach; ?>
+
   </section>
 </div>
 <div id="evenement" class="global">

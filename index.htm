@@ -7,15 +7,8 @@
 
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <!-- <link
-      rel="stylesheet"
-      href="http://localhost:8080/4w4-2024-gr2/wp-content/themes/theme-gr2/normalize.css"
-    />
-    <link
-      rel="stylesheet"
-      href="http://localhost:8080/4w4-2024-gr2/wp-content/themes/theme-gr2/style.css"
-    /> -->
+    <!-- <link rel="stylesheet" href="http://localhost:8080/4w4-2024-gr2/wp-content/themes/theme-gr2/normalize.css" />
+    <link rel="stylesheet" href="http://localhost:8080/4w4-2024-gr2/wp-content/themes/theme-gr2/style.css" /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,8 +25,24 @@
     />
   </head>
 
+  <!-- clr-primaire-100 bck-primaire-400 -->
+
   <body>
-    <div id="menu" class="global">
+    <div id="menu" class="global clr-agencement-rouge">
+      <!-- Permet d'ajouter un logo qui a été choisi à l'aide du customiser -->
+      <a
+        href="http://localhost:8080/4w4-2024-gr2/"
+        class="custom-logo-link"
+        rel="home"
+        aria-current="page"
+        ><img
+          width="150"
+          height="146"
+          src="http://localhost:8080/4w4-2024-gr2/wp-content/uploads/2024/03/LogoTP1.png"
+          class="custom-logo"
+          alt="Club de voyage"
+          decoding="async"
+      /></a>
       <header class="entete__menu">
         <label id="burger" for="chk_burger"
           ><svg
@@ -56,69 +65,77 @@
         <nav class="menu-principal-container">
           <ul id="menu-principal" class="menu">
             <li
-              id="menu-item-32"
-              class="menu-item menu-item-type-post_type menu-item-object-post menu-item-32"
+              id="menu-item-73"
+              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73"
             >
-              <a
-                href="http://localhost:8080/4w4-2024-gr2/2020/10/07/350-5n1-communication-et-dynamique-dune-equipe-de-travail-45h/"
-                >Communication</a
+              <a href="http://localhost:8080/4w4-2024-gr2/category/aventure/"
+                >Aventure</a
               >
             </li>
             <li
-              id="menu-item-33"
-              class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"
+              id="menu-item-74"
+              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74"
             >
-              <a
-                href="http://localhost:8080/4w4-2024-gr2/2020/10/07/393-5e1-methodes-de-recherche-et-preparation-au-marche-du-travail-45h/"
-                >Méthodes de recherche</a
+              <a href="http://localhost:8080/4w4-2024-gr2/category/croisiere/"
+                >croisière</a
               >
             </li>
             <li
-              id="menu-item-34"
-              class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"
+              id="menu-item-75"
+              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-75"
             >
-              <a
-                href="http://localhost:8080/4w4-2024-gr2/2020/10/07/582-1j1-animation-et-interactivite-en-jeu-75h/"
-                >Animation en jeu</a
+              <a href="http://localhost:8080/4w4-2024-gr2/category/culturel/"
+                >Culturel</a
               >
             </li>
             <li
-              id="menu-item-35"
-              class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"
+              id="menu-item-76"
+              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-76"
             >
-              <a
-                href="http://localhost:8080/4w4-2024-gr2/2020/10/07/description-du-cours-582-1m1-creation-video/"
-                >Création vidéo</a
+              <a href="http://localhost:8080/4w4-2024-gr2/category/economique/"
+                >Économique</a
               >
             </li>
             <li
-              id="menu-item-38"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"
+              id="menu-item-78"
+              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-78"
             >
-              <a href="#accueil">Accueil</a>
+              <a
+                href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/"
+                >Pleine nature</a
+              >
             </li>
             <li
-              id="menu-item-39"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"
+              id="menu-item-79"
+              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"
             >
-              <a href="#galerie">Galerie</a>
+              <a href="http://localhost:8080/4w4-2024-gr2/category/repos/"
+                >Repos</a
+              >
             </li>
             <li
-              id="menu-item-40"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"
+              id="menu-item-80"
+              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80"
             >
-              <a href="#evenement">Événement</a>
+              <a href="http://localhost:8080/4w4-2024-gr2/category/sport/"
+                >Sport</a
+              >
+            </li>
+            <li
+              id="menu-item-81"
+              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-81"
+            >
+              <a href="http://localhost:8080/4w4-2024-gr2/category/zen/">Zen</a>
             </li>
           </ul>
         </nav>
       </header>
     </div>
+    <h2>Front-page.php</h2>
     <div id="entete" class="global">
       <section class="entete__header">
-        <h1 class="bgc-text">Thème du groupe #2</h1>
-        <h2 class="bgc-text">
-          4W4 - Conception d'interface et <span>développement Web</span>
-        </h2>
+        <h1 class="bgc-text">Club de voyage</h1>
+        <h2 class="bgc-text"><span>Nos membres avant tout</span></h2>
         <h3 class="bgc-text">TIM - Collège de Maisonneuve</h3>
         <button class="entete__button">Événements</button>
       </section>
@@ -140,249 +157,140 @@
       <section class="accueil__section">
         <h2>Accueil</h2>
         <div class="section__cours">
-          <!-- if (have_posts()) {
-          while (have_posts()) {
-            the_post();
-            the_title('<p>', '</p>');
-            $contenu = get_the_content();
-            $contenu = wp_trim_words($contenu, 10);
-            echo $contenu;
-          }
-        }   -->
+          <!-- get_the_title() // retourne une chaîne qui contient le titre
+           the_title() // echo du titre -->
 
           <div class="carte">
-            <h5>582-1M1</h5>
-            <h4>Création vidéo</h4>
+            <h4>Amazon Rainforest, Brésil</h4>
             <p>
-              3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au
-              traitement des images en mouvement, au traitement du son ainsi
-              qu'aux bases de la scénarisation linéaire. L’étudiant apprend à
-              utiliser…
+              L'Amazonie est la plus grande forêt tropicale du monde, abritant…
             </p>
-            <h5>Durée: 75h</h5>
+            <p>
+              <a
+                href="http://localhost:8080/4w4-2024-gr2/amazon-rainforest-bresil/"
+                >La suite</a
+              >
+            </p>
+            <a
+              href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/"
+              rel="category tag"
+              >Pleine nature</a
+            >-<a
+              href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
+              rel="category tag"
+              >Populaire</a
+            >
           </div>
           <div class="carte">
-            <h5>582-4C2</h5>
-            <h4>Gestion de projets multimédias</h4>
+            <h4>Costa Rica</h4>
             <p>
-              Ce cours initie l'étudiant aux rudiments de la gestion d’un projet
-              multimédia. L’étudiant apprend à analyser les besoins liés à la
-              réalisation du projet en termes de ressources humaines,
-              matérielles…
+              Le Costa Rica, joyau d'aventures en Amérique centrale, offre une…
             </p>
-            <h5>Durée: 45h</h5>
+            <p>
+              <a href="http://localhost:8080/4w4-2024-gr2/costa-rica/"
+                >La suite</a
+              >
+            </p>
+            <a
+              href="http://localhost:8080/4w4-2024-gr2/category/aventure/"
+              rel="category tag"
+              >Aventure</a
+            >-<a
+              href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/"
+              rel="category tag"
+              >Pleine nature</a
+            >-<a
+              href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
+              rel="category tag"
+              >Populaire</a
+            >
           </div>
           <div class="carte">
-            <h5>582-4W4</h5>
-            <h4>Conception d’interfaces et développement Web</h4>
+            <h4>Kyoto, Japon</h4>
             <p>
-              Dans ce cours, l’étudiant poursuit son apprentissage de
-              l’intégration de sites Web dynamiques à l’aide d’un gestionnaire
-              de contenu. L’étudiant apprend à développer par programmation des
-              thèmes personnalisés pour répondre…
+              Kyoto incarne l'essence même de la tradition japonaise. En tant…
             </p>
-            <h5>Durée: 90h</h5>
+            <p>
+              <a href="http://localhost:8080/4w4-2024-gr2/kyoto-japon/"
+                >La suite</a
+              >
+            </p>
+            <a
+              href="http://localhost:8080/4w4-2024-gr2/category/culturel/"
+              rel="category tag"
+              >Culturel</a
+            >-<a
+              href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
+              rel="category tag"
+              >Populaire</a
+            >-<a
+              href="http://localhost:8080/4w4-2024-gr2/category/repos/"
+              rel="category tag"
+              >Repos</a
+            >-<a
+              href="http://localhost:8080/4w4-2024-gr2/category/zen/"
+              rel="category tag"
+              >Zen</a
+            >
           </div>
           <div class="carte">
-            <h5>582-4J4</h5>
-            <h4>Création de jeu en équipe</h4>
+            <h4>Parc national de Yosemite, États-Unis</h4>
+            <p>Le parc national de Yosemite, en Californie, est réputé pour…</p>
             <p>
-              Dans ce cours qui s'appuie sur une pédagogie par projets,
-              l’étudiant réalise un projet d’envergure en équipe de travail.
-              C’est l’occasion pour l’étudiant d’appliquer et d’intégrer
-              l’ensemble des compétences acquises…
+              <a
+                href="http://localhost:8080/4w4-2024-gr2/parc-national-de-yosemite-etats-unis/"
+                >La suite</a
+              >
             </p>
-            <h5>Durée: 105h</h5>
+            <a
+              href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/"
+              rel="category tag"
+              >Pleine nature</a
+            >-<a
+              href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
+              rel="category tag"
+              >Populaire</a
+            >
           </div>
           <div class="carte">
-            <h5>582-4PA</h5>
-            <h4>Interfaces Web réactives et animées &#8211; Cours au choix</h4>
+            <h4>Parc national des Cinque Terre, Italie</h4>
+            <p>Situé sur la côte nord-ouest de l'Italie, le parc national…</p>
             <p>
-              En session 4, l'étudiant doit choisir entre ce cours et le cours
-              Animation 3D. Dans ce cours, l'étudiant ayant un intérêt plus
-              marqué pour la programmation a la possibilité d'approfondir…
+              <a
+                href="http://localhost:8080/4w4-2024-gr2/parc-national-des-cinque-terre-italie/"
+                >La suite</a
+              >
             </p>
-            <h5>Durée: 75h</h5>
+            <a
+              href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/"
+              rel="category tag"
+              >Pleine nature</a
+            >-<a
+              href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
+              rel="category tag"
+              >Populaire</a
+            >
           </div>
           <div class="carte">
-            <h5>582-4MB</h5>
-            <h4>Animation 3D</h4>
+            <h4>Paris, France</h4>
             <p>
-              En session 4, l'étudiant doit choisir entre ce cours et le cours
-              Interfaces Web réactives et animées. Ce cours a pour but de
-              permettre à l’étudiant d’approfondir les notions acquises…
+              Paris, surnommée la Ville Lumière, est un véritable joyau
+              culturel.…
             </p>
-            <h5>Durée: 75h</h5>
-          </div>
-          <div class="carte">
-            <h5>393-5E1</h5>
-            <h4>Méthodes de recherche et préparation au marché du travail</h4>
             <p>
-              Ce cours permet à l’étudiant d'acquérir des habiletés en
-              recherche, en organisation et en transmission d’informations
-              numériques. L'étudiant est initié aux notions de base liées à la
-              veille informationnelle et…
+              <a href="http://localhost:8080/4w4-2024-gr2/paris-france/"
+                >La suite</a
+              >
             </p>
-            <h5>Durée: 45h</h5>
-          </div>
-          <div class="carte">
-            <h5>350-5N1</h5>
-            <h4>Communication et dynamique d’une équipe de travail</h4>
-            <p>
-              Ce cours permet à l’étudiant de développer ses habiletés en
-              matière de communication interpersonnelle et de mieux interagir
-              dans une équipe multimédia. L’étudiant est appelé à développer sa
-              capacité́ à…
-            </p>
-            <h5>Durée: 45h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-5W5</h5>
-            <h4>Projet Web en équipe</h4>
-            <p>
-              Préalable relatif : Conception d’interfaces et développement Web
-              Dans ce cours, qui s'appuie sur une pédagogie par projets,
-              l’étudiant participe à la réalisation d’un produit multimédia en
-              ligne pour un…
-            </p>
-            <h5>Durée: 105h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-5MB</h5>
-            <h4>Technologies émergentes et avancées – volet Création</h4>
-            <p>
-              En session 5, l'étudiant doit choisir entre ce cours et le cours
-              Technologies émergentes et avancées – volet Programmation. Dans ce
-              cours, l’étudiant davantage intéressé par les aspects créatifs du…
-            </p>
-            <h5>Durée: 60h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-3J3</h5>
-            <h4>Création de jeu 3D</h4>
-            <p>
-              Ce cours permet à l'étudiant d'intégrer différents types de médias
-              à l'aide des fonctionnalités d'un logiciel d'intégration 3D.
-              L'étudiant est amené à contrôler et à animer les éléments d'une
-              application…
-            </p>
-            <h5>Durée: 75h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-3W3</h5>
-            <h4>Création de sites Web dynamiques</h4>
-            <p>
-              Dans ce cours, les notions acquises dans les cours « 582-1W1 :
-              Mise en page Web » et « 582-2W2 : Animation et interactivité Web »
-              sont approfondies et complétées…
-            </p>
-            <h5>Durée: 90h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-1M2</h5>
-            <h4>Conception graphique et imagerie matricielle</h4>
-            <p>
-              Ce cours initie l'étudiant aux rudiments de la conception et de la
-              communication graphique ainsi qu'au traitement des images fixes
-              matricielles. On y aborde les notions de base sur le…
-            </p>
-            <h5>Durée: 90h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-1W1</h5>
-            <h4>Mise en page Web</h4>
-            <p>
-              Dans ce cours, l'étudiant apprend les techniques de mise en page
-              Web en utilisant les langages de balisage et de feuilles de
-              styles. L'étudiant apprend également à analyser et schématiser…
-            </p>
-            <h5>Durée: 75h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-1J1</h5>
-            <h4>Animation et interactivité en jeu</h4>
-            <p>
-              Ce cours est consacré aux concepts de base nécessaires à la
-              création d’un jeu numérique. Le cours porte, d’une part, sur
-              l’animation des médias : l’étudiant y apprend à importer…
-            </p>
-            <h5>Durée: 75h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-2M3</h5>
-            <h4>Effets spéciaux et animation</h4>
-            <p>
-              Ce cours permet d'approfondir la formation de l’étudiant en
-              matière de traitement d’images en mouvement et de traitement
-              sonore. L’étudiant poursuit son apprentissage des techniques de
-              prise de vues avec…
-            </p>
-            <h5>Durée: 60h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-2M4</h5>
-            <h4>Conception graphique et imagerie vectorielle</h4>
-            <p>
-              Dans ce cours, l’étudiant poursuit l’apprentissage des notions
-              liées à la conception, à la communication graphique et au
-              traitement des images fixes vectorielles. L'étudiant développe un
-              concept créatif décliné en…
-            </p>
-            <h5>Durée: 90h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-2W2</h5>
-            <h4>Animation et interactivité Web</h4>
-            <p>
-              Ce cours permet à l'étudiant d'acquérir les compétences de base
-              requises pour programmer l'interactivité de
-              l'interface-utilisateur d'une application multimédia en ligne. Les
-              notions abordées dans les cours « 582-1W1 Mise…
-            </p>
-            <h5>Durée: 75h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-2J2</h5>
-            <h4>Création de jeu 2D</h4>
-            <p>
-              Dans ce cours, l’étudiant approfondit la programmation graphique
-              et s’initie aux concepts de base d'un moteur de jeu. Le cours
-              permet d'approfondir la maîtrise de la structure d'affichage ainsi
-              que…
-            </p>
-            <h5>Durée: 60h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-3M5</h5>
-            <h4>Imagerie 3D</h4>
-            <p>
-              Dans ce cours, l’étudiant est initié au monde de l’imagerie de
-              synthèse. Il est amené à maîtriser les outils et les
-              fonctionnalités de base d’un logiciel de production 3D pour…
-            </p>
-            <h5>Durée: 75h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-3C1</h5>
-            <h4>Design d’interactivité</h4>
-            <p>
-              L’étudiant apprend à concevoir des expériences interactives en
-              plaçant les besoins de l’utilisateur au cœur de sa création. Ce
-              cours transpose les techniques de conception et de communication
-              graphique dans…
-            </p>
-            <h5>Durée: 75h</h5>
-          </div>
-          <div class="carte">
-            <h5>582-6N3</h5>
-            <h4>Stage</h4>
-            <p>
-              Le stage en entreprise complète la formation de l’étudiant en lui
-              permettant d'intégrer et de mettre en application ses différents
-              acquis dans le milieu professionnel. L’étudiant joint une
-              véritable équipe…
-            </p>
-            <h5>Durée: 285h</h5>
+            <a
+              href="http://localhost:8080/4w4-2024-gr2/category/culturel/"
+              rel="category tag"
+              >Culturel</a
+            >-<a
+              href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
+              rel="category tag"
+              >Populaire</a
+            >
           </div>
         </div>
       </section>
@@ -415,11 +323,6 @@
           neque fugit, repellendus id ab! Tenetur?
         </blockquote>
       </section>
-      <!-- <div class="vague">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="fill: var(--couleur-arriere-footer)"></path>
-    </svg>
-  </div> -->
       <div class="vague">
         <svg
           data-name="Layer 1"
@@ -434,6 +337,7 @@
         </svg>
       </div>
     </div>
+
     <div id="footer" class="global">
       <footer class="footer__section">
         <form class="recherche" action="">
