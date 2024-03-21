@@ -35,7 +35,7 @@
 
   </section>
 </div>
-<div id="destinations" class="global diagonal">
+<div id="galerie" class="global diagonal">
   <section class="section__cours">
     <h2>Les destinations les plus populaires </h2>
 

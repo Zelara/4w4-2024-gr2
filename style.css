@@ -307,7 +307,7 @@ body {
   color: var(--couleur-accueil);
 }
 
-#destinations {
+#galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
   background: linear-gradient(180deg, var(--couleur-arriere-accueil), var(--couleur-arriere-evenement));
