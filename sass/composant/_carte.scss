@@ -46,13 +46,24 @@
 .carte-titre {
   background-color: var(--couleur-blanc);
   border-radius: 30px;
-  padding: 0.3rem;
+  padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
 }
 
 .carte-suite {
   background-color: var(--couleur-blanc);
   border-radius: 30px;
-  padding: 0.3rem;
+  padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
+}
+
+.carte-lien-article {
+  padding-top: 1rem;
+  border-top: 1px solid var(--couleur-noir);
+  width: 100%;
+}
+
+.article-nombre {
+  font-size: 1.5rem;
+  font-weight: bold;
 }

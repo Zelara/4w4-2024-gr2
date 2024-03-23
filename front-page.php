@@ -46,8 +46,8 @@
       <div class="carte">
         <h4 class="carte-titre"><?php echo $category->name; ?></h4>
         <p><?php echo wp_trim_words($category->description, 10); ?></p>
-        <p><?php echo sprintf(_n('%d Article', '%d Articles', $category->count), $category->count); ?></p>
-        <p><a href="<?php echo esc_url(add_query_arg('cat', $category->term_id, get_category_link($category->term_id))); ?>">Voir tous les articles</a></p>
+        <p><?php echo sprintf(_n('<span class="article-nombre">%d</span> Article', '<span class="article-nombre">%d</span> Articles', $category->count), $category->count); ?></p>
+        <p class="carte-lien-article"><a href="<?php echo esc_url(add_query_arg('cat', $category->term_id, get_category_link($category->term_id))); ?>">Voir tous les articles</a></p>
       </div>
     <?php endforeach; ?>
 

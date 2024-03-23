@@ -1,7 +1,7 @@
 # Exercice 2 (5 points)
 
 - James Ling
-- C'est une page pour un club de voyage.
+- C'est une page pour un club de voyage. Il y a des cartes qui indiquent les destinations les plus populaires et les pays.
 - Github-page: https://zelara.github.io/4w4-2024-gr2/
 
 - Compléter l'utilisation du mapping de couleurs avec boucle et mixin (1 point)
