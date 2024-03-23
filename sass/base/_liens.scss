@@ -1,5 +1,5 @@
 a {
-  color: pink;
+  color: var(--couleur-bleu);
   font-size: 1.1rem;
   text-decoration: none;
 
@@ -9,6 +9,6 @@ a {
   }
 
   &:visited {
-    color: var(--couleur-lien-visited);
+    color: var(--couleur-lien-visiter);
   }
 }

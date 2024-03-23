@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   flex: 1 0 calc(1010px / 4);
-  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
+  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 83%);
   box-shadow: var(--couleur-box-shadow) 0px 3px 8px;
 }
 
@@ -30,4 +30,29 @@
 .carte .post-categories {
   list-style-type: none;
   display: flex;
+}
+
+.post-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0 0 0;
+  border-top: 1px solid var(--couleur-noir);
+  width: 100%;
+}
+
+.carte-titre {
+  background-color: var(--couleur-blanc);
+  border-radius: 30px;
+  padding: 0.3rem;
+  border: 1px solid var(--couleur-noir);
+}
+
+.carte-suite {
+  background-color: var(--couleur-blanc);
+  border-radius: 30px;
+  padding: 0.3rem;
+  border: 1px solid var(--couleur-noir);
 }

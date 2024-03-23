@@ -24,10 +24,10 @@
       <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>
           <div class="carte">
-            <h4> <?php the_title() ?></h4>
+            <h4 class="carte-titre"> <?php the_title() ?></h4>
             <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>
-            <p><a href="<?php echo get_permalink(); ?>">La suite</a></p>
-            <?php the_category('-') ?>
+            <p class="carte-suite"><a href="<?php echo get_permalink(); ?>">La suite</a></p>
+            <?php the_category('') ?>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>
@@ -44,7 +44,7 @@
 
     foreach ($categories as $category) : ?>
       <div class="carte">
-        <h4><?php echo $category->name; ?></h4>
+        <h4 class="carte-titre"><?php echo $category->name; ?></h4>
         <p><?php echo wp_trim_words($category->description, 10); ?></p>
         <p><?php echo sprintf(_n('%d Article', '%d Articles', $category->count), $category->count); ?></p>
         <p><a href="<?php echo esc_url(add_query_arg('cat', $category->term_id, get_category_link($category->term_id))); ?>">Voir tous les articles</a></p>
