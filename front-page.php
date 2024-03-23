@@ -15,7 +15,7 @@
 </div>
 <div id="accueil" class="global">
   <section class="accueil__section">
-    <h2>Accueil</h2>
+    <h2>Les destinations les plus populaires</h2>
     <div class="section__cours">
 
       <!-- get_the_title() // retourne une chaîne qui contient le titre
@@ -37,7 +37,7 @@
 </div>
 <div id="galerie" class="global diagonal">
   <section class="section__cours">
-    <h2>Les destinations les plus populaires </h2>
+    <h2>Liste complète de toutes les catégories</h2>
 
     <?php
     $categories = get_categories();
