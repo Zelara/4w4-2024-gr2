@@ -22,7 +22,7 @@
   @if (list.length($bck) ==1) {
     background-color: $bck;
   } @else {
-    background-image: linear-gradient(90deg, $bck);
+    background-image: linear-gradient(360deg, $bck);
   }
 }
 

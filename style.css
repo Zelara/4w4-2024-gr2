@@ -23,7 +23,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --couleur-noir: black;
   --couleur-vert: #819171;
   --couleur-blanc: #fff;
-  --couleur-bleu: #1D24CA;
+  --couleur-bleu: #1d24ca;
   --degrader-rouge1: rgb(223, 27, 27);
   --degrader-rouge2: rgba(186, 48, 48, 1);
   --nb-element: 5;
@@ -52,8 +52,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --couleur-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
   --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
   --couleur-lien: #ead196;
-  --couleur-lien-hover: #98ABEE;
-  --couleur-lien-visiter: #98ABEE;
+  --couleur-lien-hover: #98abee;
+  --couleur-lien-visiter: #98abee;
   --couleur-bouton-rouge: rgba(167, 0, 0, 1);
   --couleur-bouton-rouge-pale: rgba(255, 123, 123, 1);
   --couleur-box-shadow: rgba(0, 0, 0, 0.24);
@@ -132,72 +132,72 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 }
 
 .clr-rouge-100 {
-  color: hsl(0, 78%, 49%);
+  color: hsl(0, 77%, 37%);
 }
 
 .bck-rouge-100 {
-  background-color: hsl(0, 78%, 49%);
+  background-color: hsl(0, 77%, 37%);
 }
 
 .clr-rouge-200 {
-  color: hsl(0, 73%, 48%);
+  color: hsl(0, 38%, 71%);
 }
 
 .bck-rouge-200 {
-  background-color: hsl(0, 73%, 48%);
+  background-color: hsl(0, 38%, 71%);
 }
 
 .clr-rouge-300 {
-  color: hsl(0, 70%, 48%);
+  color: hsl(359, 37%, 56%);
 }
 
 .bck-rouge-300 {
-  background-color: hsl(0, 70%, 48%);
+  background-color: hsl(359, 37%, 56%);
 }
 
 .clr-rouge-400 {
-  color: hsl(0, 64%, 48%);
+  color: hsl(359, 52%, 42%);
 }
 
 .bck-rouge-400 {
-  background-color: hsl(0, 64%, 48%);
+  background-color: hsl(359, 52%, 42%);
 }
 
-.clr-vert-100 {
-  color: hsl(70, 100%, 85%);
+.clr-rouge2-100 {
+  color: hsl(357, 68%, 65%);
 }
 
-.bck-vert-100 {
-  background-color: hsl(70, 100%, 85%);
+.bck-rouge2-100 {
+  background-color: hsl(357, 68%, 65%);
 }
 
-.clr-vert-200 {
-  color: hsl(70, 100%, 50%);
+.clr-rouge2-200 {
+  color: hsl(356, 66%, 48%);
 }
 
-.bck-vert-200 {
-  background-color: hsl(70, 100%, 50%);
+.bck-rouge2-200 {
+  background-color: hsl(356, 66%, 48%);
 }
 
-.clr-vert-300 {
-  color: hsl(70, 100%, 30%);
+.clr-rouge2-300 {
+  color: hsl(2, 81%, 69%);
 }
 
-.bck-vert-300 {
-  background-color: hsl(70, 100%, 30%);
+.bck-rouge2-300 {
+  background-color: hsl(2, 81%, 69%);
 }
 
-.clr-vert-400 {
-  color: hsl(70, 100%, 15%);
+.clr-rouge2-400 {
+  color: hsl(356, 58%, 64%);
 }
 
-.bck-vert-400 {
-  background-color: hsl(70, 100%, 15%);
+.bck-rouge2-400 {
+  background-color: hsl(356, 58%, 64%);
 }
 
 .clr-agencement-primaire {
   color: hsl(220, 100%, 15%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+  background-image: linear-gradient(360deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
 }
 
 .clr-agencement-secondaire {
@@ -206,13 +206,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 }
 
 .clr-agencement-rouge {
-  color: hsl(0, 64%, 48%);
-  background-color: hsl(0, 78%, 49%);
+  color: hsl(359, 52%, 42%);
+  background-image: linear-gradient(360deg, hsl(0, 77%, 37%), hsl(0, 38%, 71%));
 }
 
-.clr-agencement-vert {
-  color: hsl(70, 100%, 15%);
-  background-color: hsl(70, 100%, 85%);
+.clr-agencement-rouge2 {
+  color: hsl(356, 58%, 64%);
+  background-image: linear-gradient(360deg, hsl(357, 68%, 65%), hsl(356, 66%, 48%));
 }
 
 /* ////////////////////////////////////////// */
@@ -478,8 +478,10 @@ blockquote {
   justify-content: center;
   align-items: center;
   flex: 1 0 252.5px;
-  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 83%);
   box-shadow: var(--couleur-box-shadow) 0px 3px 8px;
+}
+.carte p {
+  color: var(--couleur-noir);
 }
 
 .carte * {
@@ -512,6 +514,7 @@ blockquote {
   border-radius: 30px;
   padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
+  color: var(--couleur-noir);
 }
 
 .carte-suite {

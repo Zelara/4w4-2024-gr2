@@ -13,7 +13,7 @@
             if (have_posts()) :
                 while (have_posts()) : the_post();
             ?>
-                    <div class="carte">
+                    <div class="carte clr-agencement-rouge2">
                         <h4 class="carte-titre"> <?php the_title() ?></h4>
                         <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>
                         <p class="carte-suite"><a href="<?php echo get_permalink(); ?>">La suite</a></p>

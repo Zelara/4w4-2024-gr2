@@ -13,7 +13,7 @@
             if (have_posts()) :
                 while (have_posts()) : the_post();
             ?>
-                    <div class="carte">
+                    <div class="carte clr-agencement-rouge2">
                         <h4 class="carte-titre"> <?php the_title() ?></h4>
                         <p> <?php the_content(); ?></p>
                     </div>

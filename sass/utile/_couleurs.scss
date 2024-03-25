@@ -14,15 +14,15 @@ $--clr-orange-leger: hsl(40, 100%, 50%);
 $--clr-orange-moyen: hsl(40, 100%, 30%);
 $--clr-orange-fonce: hsl(40, 100%, 15%);
 
-$--clr-rouge-pale: hsl(0, 78%, 49%);
-$--clr-rouge-leger: hsl(0, 73%, 48%);
-$--clr-rouge-moyen: hsl(0, 70%, 48%);
-$--clr-rouge-fonce: hsl(0, 64%, 48%);
+$--clr-rouge-pale: hsl(0deg 77% 37%);
+$--clr-rouge-leger: hsl(0, 38%, 71%);
+$--clr-rouge-moyen: hsl(359, 37%, 56%);
+$--clr-rouge-fonce: hsl(359, 52%, 42%);
 
-$--clr-vert-pale: hsl(70, 100%, 85%);
-$--clr-vert-leger: hsl(70, 100%, 50%);
-$--clr-vert-moyen: hsl(70, 100%, 30%);
-$--clr-vert-fonce: hsl(70, 100%, 15%);
+$--clr-rouge2-pale: hsl(357, 68%, 65%);
+$--clr-rouge2-leger: hsl(356, 66%, 48%);
+$--clr-rouge2-moyen: hsl(2, 81%, 69%);
+$--clr-rouge2-fonce: hsl(356, 58%, 64%);
 
 // Création du mapping des couleurs
 
@@ -45,11 +45,11 @@ $defaut: (
     300: $--clr-rouge-moyen,
     400: $--clr-rouge-fonce,
   ),
-  vert: (
-    100: $--clr-vert-pale,
-    200: $--clr-vert-leger,
-    300: $--clr-vert-moyen,
-    400: $--clr-vert-fonce,
+  rouge2: (
+    100: $--clr-rouge2-pale,
+    200: $--clr-rouge2-leger,
+    300: $--clr-rouge2-moyen,
+    400: $--clr-rouge2-fonce,
   ),
 );
 
@@ -64,11 +64,11 @@ $agencement-couleur: (
   ),
   rouge: (
     $--clr-rouge-fonce,
-    $--clr-rouge-pale,
+    ($--clr-rouge-pale, $--clr-rouge-leger),
   ),
-  vert: (
-    $--clr-vert-fonce,
-    $--clr-vert-pale,
+  rouge2: (
+    $--clr-rouge2-fonce,
+    ($--clr-rouge2-pale, $--clr-rouge2-leger),
   ),
 );
 
@@ -76,7 +76,7 @@ $agencement-couleur: (
   --couleur-noir: black;
   --couleur-vert: #819171;
   --couleur-blanc: #fff;
-  --couleur-bleu: #1D24CA;
+  --couleur-bleu: #1d24ca;
 
   --degrader-rouge1: rgb(223, 27, 27);
   --degrader-rouge2: rgba(186, 48, 48, 1);
@@ -116,8 +116,8 @@ $agencement-couleur: (
 
   // Variables pour les liens
   --couleur-lien: #ead196;
-  --couleur-lien-hover: #98ABEE;
-  --couleur-lien-visiter: #98ABEE;
+  --couleur-lien-hover: #98abee;
+  --couleur-lien-visiter: #98abee;
 
   --couleur-bouton-rouge: rgba(167, 0, 0, 1);
   --couleur-bouton-rouge-pale: rgba(255, 123, 123, 1);

@@ -23,7 +23,7 @@
 
       <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>
-          <div class="carte">
+          <div class="carte clr-agencement-rouge2">
             <h4 class="carte-titre"> <?php the_title() ?></h4>
             <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>
             <p class="carte-suite"><a href="<?php echo get_permalink(); ?>">La suite</a></p>
@@ -43,7 +43,7 @@
     $categories = get_categories();
 
     foreach ($categories as $category) : ?>
-      <div class="carte">
+      <div class="carte clr-agencement-rouge2">
         <h4 class="carte-titre"><?php echo $category->name; ?></h4>
         <p><?php echo wp_trim_words($category->description, 10); ?></p>
         <p><?php echo sprintf(_n('<span class="article-nombre">%d</span> Article', '<span class="article-nombre">%d</span> Articles', $category->count), $category->count); ?></p>
