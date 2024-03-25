@@ -3,7 +3,7 @@
 ?>
 
 <?php get_header(); ?>
-<h2>Front-page.php</h2>
+<!-- <h2>Front-page.php</h2> -->
 <div id="entete" class="global">
   <section class="entete__header">
     <h1 class="bgc-text"><?php echo get_bloginfo('name'); ?></h1>

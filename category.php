@@ -3,7 +3,7 @@
 ?>
 
 <?php get_header(); ?>
-<h2>category</h2>
+<!-- <h2>category</h2> -->
 
 <div id="accueil" class="global">
     <section class="accueil__section">
