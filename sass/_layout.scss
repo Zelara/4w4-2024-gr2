@@ -30,16 +30,16 @@ body {
   color: var(--couleur-entete);
   position: relative;
 }
-#accueil {
-  background-color: var(--couleur-arriere-accueil);
-  color: var(--couleur-accueil);
+#populaire {
+  background-color: var(--couleur-arriere-general);
+  color: var(--couleur-general);
 }
-#galerie {
+#categorie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
   background: linear-gradient(
     180deg,
-    var(--couleur-arriere-accueil),
+    var(--couleur-arriere-general),
     var(--couleur-arriere-evenement)
   );
 }

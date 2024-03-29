@@ -13,8 +13,8 @@
   </section>
   <?php get_template_part("gabarit/vague") ?>
 </div>
-<div id="accueil" class="global">
-  <section class="accueil__section">
+<div id="populaire" class="global">
+  <section>
     <h2>Les destinations les plus populaires</h2>
     <div class="section__cours">
 
@@ -23,10 +23,10 @@
 
       <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>
-          <div class="carte clr-agencement-rouge2">
-            <h4 class="carte-titre"> <?php the_title() ?></h4>
+          <div class="contenu clr-agencement-rouge2">
+            <h4 class="contenu-titre"> <?php the_title() ?></h4>
             <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>
-            <p class="carte-suite"><a href="<?php echo get_permalink(); ?>">La suite</a></p>
+            <p class="contenu-suite"><a href="<?php echo get_permalink(); ?>">La suite</a></p>
             <?php the_category('') ?>
           </div>
         <?php endwhile; ?>
@@ -35,7 +35,7 @@
 
   </section>
 </div>
-<div id="galerie" class="global diagonal">
+<div id="categorie" class="global diagonal">
   <section class="section__cours">
     <h2>Liste complète de toutes les catégories</h2>
 
@@ -43,11 +43,11 @@
     $categories = get_categories();
 
     foreach ($categories as $category) : ?>
-      <div class="carte clr-agencement-rouge2">
-        <h4 class="carte-titre"><?php echo $category->name; ?></h4>
+      <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre"><?php echo $category->name; ?></h4>
         <p><?php echo wp_trim_words($category->description, 10); ?></p>
         <p><?php echo sprintf(_n('<span class="article-nombre">%d</span> Article', '<span class="article-nombre">%d</span> Articles', $category->count), $category->count); ?></p>
-        <p class="carte-lien-article"><a href="<?php echo esc_url(add_query_arg('cat', $category->term_id, get_category_link($category->term_id))); ?>">Voir tous les articles</a></p>
+        <p class="contenu-lien-article"><a href="<?php echo esc_url(add_query_arg('cat', $category->term_id, get_category_link($category->term_id))); ?>">Voir tous les articles</a></p>
       </div>
     <?php endforeach; ?>
 
@@ -56,7 +56,6 @@
 <div id="evenement" class="global">
   <section class="evenement__section">
     <h2>Événement</h2>
-    <a href="#">Aventure</a>
     <blockquote>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
       delectus est consectetur nobis accusantium nesciunt pariatur labore

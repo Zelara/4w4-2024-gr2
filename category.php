@@ -1,22 +1,18 @@
-<?php
-// Modèle de base pour l'affichage d'une liste d'article d'une certaine catégorie
-?>
-
 <?php get_header(); ?>
 <!-- <h2>category</h2> -->
 
-<div id="accueil" class="global">
-    <section class="accueil__section">
+<div id="categorie-seul" class="global">
+    <section>
         <h2>La catégorie</h2>
         <div class="section__cours">
             <?php
             if (have_posts()) :
                 while (have_posts()) : the_post();
             ?>
-                    <div class="carte clr-agencement-rouge2">
-                        <h4 class="carte-titre"> <?php the_title() ?></h4>
+                    <div class="contenu clr-agencement-rouge2">
+                        <h4 class="contenu-titre"> <?php the_title() ?></h4>
                         <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>
-                        <p class="carte-suite"><a href="<?php echo get_permalink(); ?>">La suite</a></p>
+                        <p class="contenu-suite"><a href="<?php echo get_permalink(); ?>">La suite</a></p>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
@@ -24,8 +20,8 @@
 
     </section>
 </div>
-<div id="galerie" class="global diagonal">
-    <section class="galerie__section">
+<div id="categorie" class="global diagonal">
+    <section class="categorie__section">
         <h2>Galerie</h2>
         <a href="#">Livre 1984</a>
         <blockquote>

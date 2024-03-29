@@ -1,20 +1,16 @@
-<?php
-// Modèle de base index.php
-?>
-
 <?php get_header(); ?>
 <!-- <h2>single.php</h2> -->
 
-<div id="accueil" class="global">
-    <section class="accueil__section">
+<div id="single" class="global">
+    <section>
         <h2>La suite</h2>
         <div class="section__cours">
             <?php
             if (have_posts()) :
                 while (have_posts()) : the_post();
             ?>
-                    <div class="carte clr-agencement-rouge2">
-                        <h4 class="carte-titre"> <?php the_title() ?></h4>
+                    <div class="contenu clr-agencement-rouge2">
+                        <h4 class="contenu-titre"> <?php the_title() ?></h4>
                         <p> <?php the_content(); ?></p>
                     </div>
                 <?php endwhile; ?>

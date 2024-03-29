@@ -102,14 +102,14 @@ $agencement-couleur: (
   // Variables pour les arrières plans
   --hu2: calc(var(--hu1) + 180); //couleur complementaire
   --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
-  --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+  --couleur-arriere-general: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
   --couleur-arriere-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
   --couleur-arriere-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
   --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
 
   // Variables pour le texte
   --couleur-entete: hsl(var(--hu1), var(--s-couleur-arriere), 10%);
-  --couleur-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 15%);
+  --couleur-general: hsl(var(--hu1), var(--s-couleur-arriere), 15%);
   --couleur-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
   --couleur-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
   --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 30%);

@@ -42,12 +42,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --l-couleur: 80%;
   --hu2: calc(var(--hu1) + 180);
   --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
-  --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+  --couleur-arriere-general: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
   --couleur-arriere-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
   --couleur-arriere-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
   --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
   --couleur-entete: hsl(var(--hu1), var(--s-couleur-arriere), 10%);
-  --couleur-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 15%);
+  --couleur-general: hsl(var(--hu1), var(--s-couleur-arriere), 15%);
   --couleur-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
   --couleur-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
   --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
@@ -303,15 +303,15 @@ body {
   position: relative;
 }
 
-#accueil {
-  background-color: var(--couleur-arriere-accueil);
-  color: var(--couleur-accueil);
+#populaire {
+  background-color: var(--couleur-arriere-general);
+  color: var(--couleur-general);
 }
 
-#galerie {
+#categorie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
-  background: linear-gradient(180deg, var(--couleur-arriere-accueil), var(--couleur-arriere-evenement));
+  background: linear-gradient(180deg, var(--couleur-arriere-general), var(--couleur-arriere-evenement));
 }
 
 #evenement {
@@ -406,6 +406,16 @@ blockquote {
   padding: 0;
 }
 
+#single {
+  background-color: var(--couleur-arriere-general);
+  color: var(--couleur-general);
+}
+
+#categorie-seul {
+  background-color: var(--couleur-arriere-general);
+  color: var(--couleur-general);
+}
+
 /* ////////////////////////////////////////// */
 /* les effets                                 */
 /* ////////////////////////////////////////// */
@@ -480,7 +490,7 @@ blockquote {
   gap: 1rem;
 }
 
-.carte {
+.contenu {
   padding: 0.2rem;
   border: 1px solid var(--couleur-noir);
   display: flex;
@@ -490,20 +500,20 @@ blockquote {
   flex: 1 0 252.5px;
   box-shadow: var(--couleur-box-shadow) 0px 3px 8px;
 }
-.carte p {
+.contenu p {
   color: var(--couleur-noir);
 }
 
-.carte * {
+.contenu * {
   text-align: center;
 }
 
 @media screen and (min-width: 550px) {
-  .carte {
+  .contenu {
     flex: 1 1 23%;
   }
 }
-.carte .post-categories {
+.contenu .post-categories {
   list-style-type: none;
   display: flex;
 }
@@ -519,7 +529,7 @@ blockquote {
   width: 100%;
 }
 
-.carte-titre {
+.contenu-titre {
   background-color: var(--couleur-blanc);
   border-radius: 30px;
   padding: 0.5rem;
@@ -527,14 +537,14 @@ blockquote {
   color: var(--couleur-noir);
 }
 
-.carte-suite {
+.contenu-suite {
   background-color: var(--couleur-blanc);
   border-radius: 30px;
   padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
 }
 
-.carte-lien-article {
+.contenu-lien-article {
   padding-top: 1rem;
   border-top: 1px solid var(--couleur-noir);
   width: 100%;

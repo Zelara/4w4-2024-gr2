@@ -5,7 +5,7 @@
   gap: 1rem;
 }
 
-.carte {
+.contenu {
   padding: 0.2rem;
   border: 1px solid var(--couleur-noir);
   display: flex;
@@ -20,17 +20,17 @@
   }
 }
 
-.carte * {
+.contenu * {
   text-align: center;
 }
 
 @media screen and (min-width: 550px) {
-  .carte {
+  .contenu {
     flex: 1 1 23%;
   }
 }
 
-.carte .post-categories {
+.contenu .post-categories {
   list-style-type: none;
   display: flex;
 }
@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-.carte-titre {
+.contenu-titre {
   background-color: var(--couleur-blanc);
   border-radius: 30px;
   padding: 0.5rem;
@@ -54,14 +54,14 @@
   color: var(--couleur-noir);
 }
 
-.carte-suite {
+.contenu-suite {
   background-color: var(--couleur-blanc);
   border-radius: 30px;
   padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
 }
 
-.carte-lien-article {
+.contenu-lien-article {
   padding-top: 1rem;
   border-top: 1px solid var(--couleur-noir);
   width: 100%;

@@ -44,6 +44,8 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* ////////////////////////////////////////// */
 @import "entete";
 @import "footer";
+@import "single";
+@import "categorie";
 /* ////////////////////////////////////////// */
 /* les effets                                 */
 /* ////////////////////////////////////////// */
@@ -55,5 +57,5 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* ////////////////////////////////////////// */
 @import "composant/recherche";
 @import "composant/sociaux";
-@import "composant/carte";
+@import "composant/contenu";
 @import "composant/menu";
