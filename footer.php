@@ -44,6 +44,7 @@
         </svg>
       </a>
     </div>
+    <?php wp_nav_menu(array("theme-gr2" => "footer-menu")); ?>
   </footer>
 </div>
 </body>

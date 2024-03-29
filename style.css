@@ -52,8 +52,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --couleur-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
   --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
   --couleur-lien: #ead196;
-  --couleur-lien-hover: #98abee;
-  --couleur-lien-visiter: #98abee;
+  --couleur-lien-hover: #4f609b;
+  --couleur-lien-visiter: #4f609b;
   --couleur-bouton-rouge: rgba(167, 0, 0, 1);
   --couleur-bouton-rouge-pale: rgba(255, 123, 123, 1);
   --couleur-box-shadow: rgba(0, 0, 0, 0.24);
