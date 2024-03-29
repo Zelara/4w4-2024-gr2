@@ -5,3 +5,12 @@
     align-items: center;
     gap: 2rem;
 }
+
+#menu-footer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}

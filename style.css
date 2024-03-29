@@ -397,6 +397,15 @@ blockquote {
   gap: 2rem;
 }
 
+#menu-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
 /* ////////////////////////////////////////// */
 /* les effets                                 */
 /* ////////////////////////////////////////// */
@@ -457,6 +466,7 @@ blockquote {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .sociaux svg {
