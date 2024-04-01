@@ -44,6 +44,7 @@
         </svg>
       </a>
     </div>
+    <span> Explorez nos destinations de rêve pour votre prochain voyage.</span>
     <?php wp_nav_menu(array("menu" => "footer")); ?>
   </footer>
 </div>
