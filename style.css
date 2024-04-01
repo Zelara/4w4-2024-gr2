@@ -516,6 +516,9 @@ blockquote {
 .contenu .post-categories {
   list-style-type: none;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .post-categories {
