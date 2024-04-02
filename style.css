@@ -132,11 +132,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 }
 
 .clr-rouge-100 {
-  color: hsl(0, 77%, 37%);
+  color: hsl(0, 72.41%, 57.77%);
 }
 
 .bck-rouge-100 {
-  background-color: hsl(0, 77%, 37%);
+  background-color: hsl(0, 72.41%, 57.77%);
 }
 
 .clr-rouge-200 {
@@ -164,19 +164,19 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 }
 
 .clr-rouge2-100 {
-  color: hsl(357, 68%, 65%);
+  color: hsl(357, 66.93%, 70.48%);
 }
 
 .bck-rouge2-100 {
-  background-color: hsl(357, 68%, 65%);
+  background-color: hsl(357, 66.93%, 70.48%);
 }
 
 .clr-rouge2-200 {
-  color: hsl(356, 66%, 48%);
+  color: hsl(356, 67.49%, 60.28%);
 }
 
 .bck-rouge2-200 {
-  background-color: hsl(356, 66%, 48%);
+  background-color: hsl(356, 67.49%, 60.28%);
 }
 
 .clr-rouge2-300 {
@@ -207,12 +207,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 
 .clr-agencement-rouge {
   color: hsl(359, 52%, 42%);
-  background-image: linear-gradient(360deg, hsl(0, 77%, 37%), hsl(0, 38%, 71%));
+  background-image: linear-gradient(360deg, hsl(0, 72.41%, 57.77%), hsl(0, 38%, 71%));
 }
 
 .clr-agencement-rouge2 {
   color: hsl(356, 58%, 64%);
-  background-image: linear-gradient(360deg, hsl(357, 68%, 65%), hsl(356, 66%, 48%));
+  background-image: linear-gradient(360deg, hsl(357, 66.93%, 70.48%), hsl(356, 67.49%, 60.28%));
 }
 
 /* ////////////////////////////////////////// */
