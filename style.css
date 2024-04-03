@@ -22,6 +22,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 :root {
   --couleur-noir: black;
   --couleur-vert: #3a943d;
+  --couleur-mauve: #a926bf;
   --couleur-blanc: #fff;
   --couleur-bleu-pale: #7dbbec;
   --couleur-bleu: #1d24ca;
@@ -266,7 +267,7 @@ h6 {
 }
 
 p {
-  font-size: clamp(0.6rem, -0.2344rem + 3.75vw, 1rem);
+  font-size: clamp(1.3rem, -0.2344rem + 3.75vw, 1.4rem);
 }
 
 hr {
@@ -358,7 +359,7 @@ button.entete__button:active, button.entete__button:visited {
 }
 
 span {
-  color: var(--couleur-vert);
+  color: var(--couleur-mauve);
 }
 
 blockquote {
@@ -554,6 +555,9 @@ blockquote {
   padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
   font-weight: bold;
+}
+.contenu-suite a {
+  font-size: 1.5rem;
 }
 
 .contenu-lien-article {
