@@ -41,6 +41,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
+  font-weight: bold;
 }
 
 .post-categories {
@@ -68,12 +69,18 @@
   border-radius: 30px;
   padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
+  font-weight: bold;
 }
 
 .contenu-lien-article {
   padding-top: 1rem;
   border-top: 1px solid var(--couleur-noir);
   width: 100%;
+  font-weight: bold;
+}
+
+.contenu-article {
+  font-weight: bold;
 }
 
 .article-nombre {
