@@ -21,8 +21,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
   --couleur-noir: black;
-  --couleur-vert: #819171;
+  --couleur-vert: #3a943d;
   --couleur-blanc: #fff;
+  --couleur-bleu-pale: #7dbbec;
   --couleur-bleu: #1d24ca;
   --degrader-rouge1: rgb(223, 27, 27);
   --degrader-rouge2: rgba(186, 48, 48, 1);
@@ -253,7 +254,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(0.45rem, -0.59rem + 6.4vw, 0.9rem);
+  font-size: clamp(1.3rem, -0.59rem + 6.4vw, 1.4rem);
 }
 
 h5 {
@@ -492,7 +493,7 @@ blockquote {
 
 .contenu {
   padding: 0.2rem;
-  border: 1px solid var(--couleur-noir);
+  border: 2px solid var(--couleur-noir);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -540,7 +541,7 @@ blockquote {
 }
 
 .contenu-titre {
-  background-color: var(--couleur-blanc);
+  background-color: var(--couleur-bleu-pale);
   border-radius: 30px;
   padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
@@ -548,7 +549,7 @@ blockquote {
 }
 
 .contenu-suite {
-  background-color: var(--couleur-blanc);
+  background-color: var(--couleur-bleu-pale);
   border-radius: 30px;
   padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
@@ -561,9 +562,8 @@ blockquote {
   width: 100%;
   font-weight: bold;
 }
-
-.contenu-article {
-  font-weight: bold;
+.contenu-lien-article a {
+  font-size: 1.5rem;
 }
 
 .article-nombre {

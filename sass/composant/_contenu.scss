@@ -7,7 +7,7 @@
 
 .contenu {
   padding: 0.2rem;
-  border: 1px solid var(--couleur-noir);
+  border: 2px solid var(--couleur-noir);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +57,7 @@
 }
 
 .contenu-titre {
-  background-color: var(--couleur-blanc);
+  background-color: var(--couleur-bleu-pale);
   border-radius: 30px;
   padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
@@ -65,7 +65,7 @@
 }
 
 .contenu-suite {
-  background-color: var(--couleur-blanc);
+  background-color: var(--couleur-bleu-pale);
   border-radius: 30px;
   padding: 0.5rem;
   border: 1px solid var(--couleur-noir);
@@ -77,10 +77,9 @@
   border-top: 1px solid var(--couleur-noir);
   width: 100%;
   font-weight: bold;
-}
-
-.contenu-article {
-  font-weight: bold;
+  a {
+    font-size: 1.5rem;
+  }
 }
 
 .article-nombre {
