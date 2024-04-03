@@ -22,7 +22,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 :root {
   --couleur-noir: black;
   --couleur-vert: #3a943d;
-  --couleur-mauve: #a926bf;
+  --couleur-mauve: #481c5c;
   --couleur-blanc: #fff;
   --couleur-bleu-pale: #7dbbec;
   --couleur-bleu: #1d24ca;
@@ -54,8 +54,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --couleur-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
   --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
   --couleur-lien: #ead196;
-  --couleur-lien-hover: #4f609b;
-  --couleur-lien-visiter: #4f609b;
+  --couleur-lien-hover: #a926bf;
+  --couleur-lien-visiter: #481c5c;
   --couleur-bouton-rouge: rgba(167, 0, 0, 1);
   --couleur-bouton-rouge-pale: rgba(255, 123, 123, 1);
   --couleur-box-shadow: rgba(0, 0, 0, 0.24);
@@ -328,15 +328,17 @@ body {
 }
 
 a {
-  color: var(--couleur-bleu);
+  color: var(--couleur-mauve);
   font-size: 1.1rem;
   text-decoration: none;
 }
+@media screen and (min-width: 1100px) {
+  a {
+    font-size: 1.6rem;
+  }
+}
 a:hover, a:focus {
   color: var(--couleur-lien-hover);
-}
-a:visited {
-  color: var(--couleur-lien-visiter);
 }
 
 button.entete__button {
@@ -562,9 +564,11 @@ blockquote {
 
 .contenu-lien-article {
   padding-top: 1rem;
+  padding-bottom: 0.3rem;
   border-top: 1px solid var(--couleur-noir);
   width: 100%;
   font-weight: bold;
+  margin: 0;
 }
 .contenu-lien-article a {
   font-size: 1.5rem;

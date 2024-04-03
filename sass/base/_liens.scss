@@ -1,14 +1,14 @@
 a {
-  color: var(--couleur-bleu);
+  color: var(--couleur-mauve);
   font-size: 1.1rem;
   text-decoration: none;
+
+  @media screen and (min-width: 1100px) {
+    font-size: 1.6rem;
+  }
 
   &:hover,
   &:focus {
     color: var(--couleur-lien-hover);
-  }
-
-  &:visited {
-    color: var(--couleur-lien-visiter);
   }
 }
