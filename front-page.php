@@ -24,6 +24,7 @@
       <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>
           <div class="contenu clr-agencement-rouge2">
+            <?php the_post_thumbnail("thumbnail"); ?>
             <h4 class="contenu-titre"> <?php the_title() ?></h4>
             <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>
             <p class="contenu-suite"><a href="<?php echo get_permalink(); ?>">La suite</a></p>
@@ -39,6 +40,8 @@
 <div id="categorie" class="global diagonal">
   <section class="section__cours">
     <h2>Liste complète de toutes les catégories</h2>
+    <!-- get_categories() : Est l'ensemble des catégorie du site -->
+    <!-- get_category() : Est l'ensemble des catégories d'un post -->
     <?php
     $categories = get_categories();
     foreach ($categories as $category) : ?>
