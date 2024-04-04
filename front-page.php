@@ -13,14 +13,14 @@
   </section>
   <?php get_template_part("gabarit/vague") ?>
 </div>
+<!-- Section pour afficher les articles populaires -->
 <div id="populaire" class="global">
   <section>
     <h2>Les destinations les plus populaires</h2>
     <div class="section__cours">
 
-      <!-- get_the_title() // retourne une chaîne qui contient le titre
-           the_title() // echo du titre -->
 
+      <!-- Vérifie s'il y a des articles à afficher -->
       <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>
           <div class="contenu clr-agencement-rouge2">
@@ -35,13 +35,12 @@
 
   </section>
 </div>
+<!-- Section pour afficher les catégories -->
 <div id="categorie" class="global diagonal">
   <section class="section__cours">
     <h2>Liste complète de toutes les catégories</h2>
-
     <?php
     $categories = get_categories();
-
     foreach ($categories as $category) : ?>
       <div class="contenu clr-agencement-rouge2">
         <h4 class="contenu-titre"><?php echo $category->name; ?></h4>
@@ -53,6 +52,7 @@
 
   </section>
 </div>
+<!-- Section pour afficher un événement -->
 <div id="evenement" class="global">
   <section class="evenement__section">
     <h2>Événement</h2>

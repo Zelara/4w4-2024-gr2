@@ -19,10 +19,10 @@
     </section>
 </div>
 
+<!-- Section Événement -->
 <div id="evenement" class="global">
     <section class="evenement__section">
         <h2>Événement</h2>
-        <a href="#">Aventure</a>
         <blockquote>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
             delectus est consectetur nobis accusantium nesciunt pariatur labore
@@ -30,6 +30,7 @@
             neque fugit, repellendus id ab! Tenetur?
         </blockquote>
     </section>
+    <!-- Gabarit pour une vague -->
     <?php get_template_part("gabarit/vague") ?>
 </div>
 

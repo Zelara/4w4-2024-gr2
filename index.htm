@@ -1,760 +1,291 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thème gr2</title>
 
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="http://localhost:8080/4w4-2024-gr2/wp-content/themes/theme-gr2/normalize.css" />
     <link rel="stylesheet" href="http://localhost:8080/4w4-2024-gr2/wp-content/themes/theme-gr2/style.css" /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
 
-  <!-- clr-primaire-100 bck-primaire-400 -->
-
-  <body>
+<body>
     <div id="menu" class="global clr-agencement-rouge">
-      <!-- Permet d'ajouter un logo qui a été choisi à l'aide du customiser -->
-      <a
-        href="http://localhost:8080/4w4-2024-gr2/"
-        class="custom-logo-link"
-        rel="home"
-        aria-current="page"
-        ><img
-          width="150"
-          height="146"
-          src="http://localhost:8080/4w4-2024-gr2/wp-content/uploads/2024/03/LogoTP1.png"
-          class="custom-logo"
-          alt="HoriAventure"
-          decoding="async"
-      /></a>
-      <header class="entete__menu">
-        <label id="burger" for="chk_burger"
-          ><svg
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            color="#000"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h7"
-            ></path></svg
-        ></label>
-        <input id="chk_burger" type="checkbox" />
-        <nav class="menu-principal-container">
-          <ul id="menu-principal" class="menu">
-            <li
-              id="menu-item-73"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73"
-            >
-              <a href="http://localhost:8080/4w4-2024-gr2/category/aventure/"
-                >Aventure</a
-              >
-            </li>
-            <li
-              id="menu-item-74"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74"
-            >
-              <a href="http://localhost:8080/4w4-2024-gr2/category/croisiere/"
-                >Croisière</a
-              >
-            </li>
-            <li
-              id="menu-item-75"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-75"
-            >
-              <a href="http://localhost:8080/4w4-2024-gr2/category/culturel/"
-                >Culturel</a
-              >
-            </li>
-            <li
-              id="menu-item-76"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-76"
-            >
-              <a href="http://localhost:8080/4w4-2024-gr2/category/economique/"
-                >Économique</a
-              >
-            </li>
-            <li
-              id="menu-item-78"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-78"
-            >
-              <a
-                href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/"
-                >Pleine nature</a
-              >
-            </li>
-            <li
-              id="menu-item-79"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"
-            >
-              <a href="http://localhost:8080/4w4-2024-gr2/category/repos/"
-                >Repos</a
-              >
-            </li>
-            <li
-              id="menu-item-80"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80"
-            >
-              <a href="http://localhost:8080/4w4-2024-gr2/category/sportif/"
-                >Sportif</a
-              >
-            </li>
-            <li
-              id="menu-item-81"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-81"
-            >
-              <a href="http://localhost:8080/4w4-2024-gr2/category/zen/">Zen</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-    <!-- <h2>Front-page.php</h2> -->
-    <div id="entete" class="global">
-      <section class="entete__header">
-        <h1 class="bgc-text">HoriAventure</h1>
-        <h2 class="bgc-text"><span>Pour les voyageurs passionnés </span></h2>
-        <h3 class="bgc-text">TIM - Collège de Maisonneuve</h3>
-        <button class="entete__button">Événements</button>
-      </section>
-      <div class="vague">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            class="remplissage"
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          ></path>
-        </svg>
+        <!-- Permet d'ajouter un logo qui a été choisi à l'aide du customiser -->
+        <a href="http://localhost:8080/4w4-2024-gr2/" class="custom-logo-link" rel="home" aria-current="page"><img width="150" height="146" src="http://localhost:8080/4w4-2024-gr2/wp-content/uploads/2024/03/LogoTP1.png" class="custom-logo" alt="HoriAventure" decoding="async" /></a>        <header class="entete__menu">
+            <!-- Bouton de menu hamburger -->
+            <label id="burger" for="chk_burger"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
+                </svg></label>
+            <input id="chk_burger" type="checkbox">
+            <!-- Menu de navigation WordPress -->
+            <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-73" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73"><a href="http://localhost:8080/4w4-2024-gr2/category/aventure/">Aventure</a></li>
+<li id="menu-item-74" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74"><a href="http://localhost:8080/4w4-2024-gr2/category/croisiere/">Croisière</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-75"><a href="http://localhost:8080/4w4-2024-gr2/category/culturel/">Culturel</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-76"><a href="http://localhost:8080/4w4-2024-gr2/category/economique/">Économique</a></li>
+<li id="menu-item-78" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-78"><a href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/">Pleine nature</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"><a href="http://localhost:8080/4w4-2024-gr2/category/repos/">Repos</a></li>
+<li id="menu-item-80" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80"><a href="http://localhost:8080/4w4-2024-gr2/category/sportif/">Sportif</a></li>
+<li id="menu-item-81" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-81"><a href="http://localhost:8080/4w4-2024-gr2/category/zen/">Zen</a></li>
+</ul></nav>        </header>
+    </div><!-- <h2>Front-page.php</h2> -->
+<div id="entete" class="global">
+  <section class="entete__header">
+    <h1 class="bgc-text">HoriAventure</h1>
+    <h2 class="bgc-text"><span>Pour les voyageurs passionnés </span></h2>
+    <h3 class="bgc-text">TIM - Collège de Maisonneuve</h3>
+    <button class="entete__button">Événements</button>
+  </section>
+  <div class="vague">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path class="remplissage" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+    </svg>
+</div></div>
+<!-- Section pour afficher les articles populaires -->
+<div id="populaire" class="global">
+  <section>
+    <h2>Les destinations les plus populaires</h2>
+    <div class="section__cours">
+
+
+      <!-- Vérifie s'il y a des articles à afficher -->
+                <div class="contenu clr-agencement-rouge2">
+            <h4 class="contenu-titre"> Amazon Rainforest, Brésil</h4>
+            <p> L'Amazonie est la plus grande forêt tropicale du monde, abritant…</p>
+            <p class="contenu-suite"><a href="http://localhost:8080/4w4-2024-gr2/amazon-rainforest-bresil/">La suite</a></p>
+            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/populaire/" rel="category tag">Populaire</a></li></ul>          </div>
+                  <div class="contenu clr-agencement-rouge2">
+            <h4 class="contenu-titre"> Costa Rica</h4>
+            <p> Le Costa Rica, joyau d'aventures en Amérique centrale, offre une…</p>
+            <p class="contenu-suite"><a href="http://localhost:8080/4w4-2024-gr2/costa-rica/">La suite</a></p>
+            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/aventure/" rel="category tag">Aventure</a></li>
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/populaire/" rel="category tag">Populaire</a></li></ul>          </div>
+                  <div class="contenu clr-agencement-rouge2">
+            <h4 class="contenu-titre"> Kyoto, Japon</h4>
+            <p> Kyoto incarne l'essence même de la tradition japonaise. En tant…</p>
+            <p class="contenu-suite"><a href="http://localhost:8080/4w4-2024-gr2/kyoto-japon/">La suite</a></p>
+            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/culturel/" rel="category tag">Culturel</a></li>
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/repos/" rel="category tag">Repos</a></li>
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/zen/" rel="category tag">Zen</a></li></ul>          </div>
+                  <div class="contenu clr-agencement-rouge2">
+            <h4 class="contenu-titre"> Parc national de Yosemite, États-Unis</h4>
+            <p> Le parc national de Yosemite, en Californie, est réputé pour…</p>
+            <p class="contenu-suite"><a href="http://localhost:8080/4w4-2024-gr2/parc-national-de-yosemite-etats-unis/">La suite</a></p>
+            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/populaire/" rel="category tag">Populaire</a></li></ul>          </div>
+                  <div class="contenu clr-agencement-rouge2">
+            <h4 class="contenu-titre"> Parc national des Cinque Terre, Italie</h4>
+            <p> Situé sur la côte nord-ouest de l'Italie, le parc national…</p>
+            <p class="contenu-suite"><a href="http://localhost:8080/4w4-2024-gr2/parc-national-des-cinque-terre-italie/">La suite</a></p>
+            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/populaire/" rel="category tag">Populaire</a></li></ul>          </div>
+                  <div class="contenu clr-agencement-rouge2">
+            <h4 class="contenu-titre"> Paris, France</h4>
+            <p> Paris, surnommée la Ville Lumière, est un véritable joyau culturel.…</p>
+            <p class="contenu-suite"><a href="http://localhost:8080/4w4-2024-gr2/paris-france/">La suite</a></p>
+            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/culturel/" rel="category tag">Culturel</a></li>
+	<li><a href="http://localhost:8080/4w4-2024-gr2/category/populaire/" rel="category tag">Populaire</a></li></ul>          </div>
+                  </div>
+
+  </section>
+</div>
+<!-- Section pour afficher les catégories -->
+<div id="categorie" class="global diagonal">
+  <section class="section__cours">
+    <h2>Liste complète de toutes les catégories</h2>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Aventure</h4>
+        <p>Partez à la découverte de destinations exaltantes et d'expériences uniques…</p>
+        <p><span class="article-nombre">9</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/aventure/?cat=2">Voir tous les articles</a></p>
       </div>
-    </div>
-    <div id="populaire" class="global">
-      <section>
-        <h2>Les destinations les plus populaires</h2>
-        <div class="section__cours">
-          <!-- get_the_title() // retourne une chaîne qui contient le titre
-           the_title() // echo du titre -->
-
           <div class="contenu clr-agencement-rouge2">
-            <h4 class="contenu-titre">Amazon Rainforest, Brésil</h4>
-            <p>
-              L'Amazonie est la plus grande forêt tropicale du monde, abritant…
-            </p>
-            <p class="contenu-suite">
-              <a
-                href="http://localhost:8080/4w4-2024-gr2/amazon-rainforest-bresil/"
-                >La suite</a
-              >
-            </p>
-            <ul class="post-categories">
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/"
-                  rel="category tag"
-                  >Pleine nature</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
-                  rel="category tag"
-                  >Populaire</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="contenu clr-agencement-rouge2">
-            <h4 class="contenu-titre">Costa Rica</h4>
-            <p>
-              Le Costa Rica, joyau d'aventures en Amérique centrale, offre une…
-            </p>
-            <p class="contenu-suite">
-              <a href="http://localhost:8080/4w4-2024-gr2/costa-rica/"
-                >La suite</a
-              >
-            </p>
-            <ul class="post-categories">
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/aventure/"
-                  rel="category tag"
-                  >Aventure</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/"
-                  rel="category tag"
-                  >Pleine nature</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
-                  rel="category tag"
-                  >Populaire</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="contenu clr-agencement-rouge2">
-            <h4 class="contenu-titre">Kyoto, Japon</h4>
-            <p>
-              Kyoto incarne l'essence même de la tradition japonaise. En tant…
-            </p>
-            <p class="contenu-suite">
-              <a href="http://localhost:8080/4w4-2024-gr2/kyoto-japon/"
-                >La suite</a
-              >
-            </p>
-            <ul class="post-categories">
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/culturel/"
-                  rel="category tag"
-                  >Culturel</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
-                  rel="category tag"
-                  >Populaire</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/repos/"
-                  rel="category tag"
-                  >Repos</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/zen/"
-                  rel="category tag"
-                  >Zen</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="contenu clr-agencement-rouge2">
-            <h4 class="contenu-titre">Parc national de Yosemite, États-Unis</h4>
-            <p>Le parc national de Yosemite, en Californie, est réputé pour…</p>
-            <p class="contenu-suite">
-              <a
-                href="http://localhost:8080/4w4-2024-gr2/parc-national-de-yosemite-etats-unis/"
-                >La suite</a
-              >
-            </p>
-            <ul class="post-categories">
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/"
-                  rel="category tag"
-                  >Pleine nature</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
-                  rel="category tag"
-                  >Populaire</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="contenu clr-agencement-rouge2">
-            <h4 class="contenu-titre">
-              Parc national des Cinque Terre, Italie
-            </h4>
-            <p>Situé sur la côte nord-ouest de l'Italie, le parc national…</p>
-            <p class="contenu-suite">
-              <a
-                href="http://localhost:8080/4w4-2024-gr2/parc-national-des-cinque-terre-italie/"
-                >La suite</a
-              >
-            </p>
-            <ul class="post-categories">
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/"
-                  rel="category tag"
-                  >Pleine nature</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
-                  rel="category tag"
-                  >Populaire</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="contenu clr-agencement-rouge2">
-            <h4 class="contenu-titre">Paris, France</h4>
-            <p>
-              Paris, surnommée la Ville Lumière, est un véritable joyau
-              culturel.…
-            </p>
-            <p class="contenu-suite">
-              <a href="http://localhost:8080/4w4-2024-gr2/paris-france/"
-                >La suite</a
-              >
-            </p>
-            <ul class="post-categories">
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/culturel/"
-                  rel="category tag"
-                  >Culturel</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://localhost:8080/4w4-2024-gr2/category/populaire/"
-                  rel="category tag"
-                  >Populaire</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div id="categorie" class="global diagonal">
-      <section class="section__cours">
-        <h2>Liste complète de toutes les catégories</h2>
-
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Aventure</h4>
-          <p>
-            Partez à la découverte de destinations exaltantes et d'expériences
-            uniques…
-          </p>
-          <p><span class="article-nombre">9</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a
-              href="http://localhost:8080/4w4-2024-gr2/category/aventure/?cat=2"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Croisière</h4>
-          <p>
-            La catégorie de voyage "croisière" offre une expérience de voyage…
-          </p>
-          <p><span class="article-nombre">10</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a
-              href="http://localhost:8080/4w4-2024-gr2/category/croisiere/?cat=8"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Culturel</h4>
-          <p>
-            Immergez-vous dans la richesse culturelle et historique de lieux
-            fascinants…
-          </p>
-          <p><span class="article-nombre">8</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a
-              href="http://localhost:8080/4w4-2024-gr2/category/culturel/?cat=3"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Économique</h4>
-          <p>Explorez le monde sans vous ruiner grâce à des voyages…</p>
-          <p><span class="article-nombre">10</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a
-              href="http://localhost:8080/4w4-2024-gr2/category/economique/?cat=7"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">En groupe</h4>
-          <p>
-            "Les Escapades en groupe sont spécialement conçues pour les membres…
-          </p>
-          <p><span class="article-nombre">5</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a href="http://localhost:8080/4w4-2024-gr2/category/groupe/?cat=16"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Intime</h4>
-          <p>Le club "Intime" est dédié à ceux qui recherchent des…</p>
-          <p><span class="article-nombre">6</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a href="http://localhost:8080/4w4-2024-gr2/category/intime/?cat=13"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Luxueux</h4>
-          <p>
-            Bienvenue dans notre catégorie Luxueux, conçue pour les voyageurs
-            qui…
-          </p>
-          <p><span class="article-nombre">6</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a
-              href="http://localhost:8080/4w4-2024-gr2/category/luxueux/?cat=14"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Paysage</h4>
-          <p>La catégorie "Paysage" de notre club de voyage est dédiée…</p>
-          <p><span class="article-nombre">4</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a
-              href="http://localhost:8080/4w4-2024-gr2/category/paysage/?cat=15"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Petit comité</h4>
-          <p>Bienvenue dans la catégorie Petit Comité de notre club de…</p>
-          <p><span class="article-nombre">3</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a
-              href="http://localhost:8080/4w4-2024-gr2/category/petit-comite/?cat=17"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Pleine nature</h4>
-          <p>
-            Échappez à l'agitation urbaine et reconnectez-vous avec la nature
-            sauvage…
-          </p>
-          <p><span class="article-nombre">13</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a
-              href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/?cat=9"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Populaire</h4>
-          <p>Nos destinations les plus populaires en 2024</p>
-          <p><span class="article-nombre">6</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a
-              href="http://localhost:8080/4w4-2024-gr2/category/populaire/?cat=11"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Repos</h4>
-          <p>
-            Offrez-vous une escapade relaxante dans des destinations tranquilles
-            où le…
-          </p>
-          <p><span class="article-nombre">8</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a href="http://localhost:8080/4w4-2024-gr2/category/repos/?cat=4"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Solo</h4>
-          <p>Bienvenue dans la catégorie Solo de notre club de voyage…</p>
-          <p><span class="article-nombre">4</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a href="http://localhost:8080/4w4-2024-gr2/category/solo/?cat=18"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Sportif</h4>
-          <p>
-            Entraînez-vous, défiez-vous et repoussez vos limites dans des
-            destinations offrant…
-          </p>
-          <p><span class="article-nombre">13</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a href="http://localhost:8080/4w4-2024-gr2/category/sportif/?cat=6"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-        <div class="contenu clr-agencement-rouge2">
-          <h4 class="contenu-titre">Zen</h4>
-          <p>
-            Retrouvez l'harmonie intérieure et la paix de l'esprit dans des…
-          </p>
-          <p><span class="article-nombre">6</span> Articles</p>
-          <p class="contenu-lien-article">
-            <a href="http://localhost:8080/4w4-2024-gr2/category/zen/?cat=5"
-              >Voir tous les articles</a
-            >
-          </p>
-        </div>
-      </section>
-    </div>
-    <div id="evenement" class="global">
-      <section class="evenement__section">
-        <h2>Événement</h2>
-        <blockquote>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
-          delectus est consectetur nobis accusantium nesciunt pariatur labore
-          modi tempora perferendis, <span>necessitatibus a,</span> ex ratione
-          neque fugit, repellendus id ab! Tenetur?
-        </blockquote>
-      </section>
-      <div class="vague">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            class="remplissage"
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          ></path>
-        </svg>
+        <h4 class="contenu-titre">Croisière</h4>
+        <p>La catégorie de voyage "croisière" offre une expérience de voyage…</p>
+        <p><span class="article-nombre">10</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/croisiere/?cat=8">Voir tous les articles</a></p>
       </div>
-    </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Culturel</h4>
+        <p>Immergez-vous dans la richesse culturelle et historique de lieux fascinants…</p>
+        <p><span class="article-nombre">8</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/culturel/?cat=3">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Économique</h4>
+        <p>Explorez le monde sans vous ruiner grâce à des voyages…</p>
+        <p><span class="article-nombre">10</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/economique/?cat=7">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">En groupe</h4>
+        <p>"Les Escapades en groupe sont spécialement conçues pour les membres…</p>
+        <p><span class="article-nombre">5</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/groupe/?cat=16">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Intime</h4>
+        <p>Le club "Intime" est dédié à ceux qui recherchent des…</p>
+        <p><span class="article-nombre">6</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/intime/?cat=13">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Luxueux</h4>
+        <p>Bienvenue dans notre catégorie Luxueux, conçue pour les voyageurs qui…</p>
+        <p><span class="article-nombre">6</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/luxueux/?cat=14">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Paysage</h4>
+        <p>La catégorie "Paysage" de notre club de voyage est dédiée…</p>
+        <p><span class="article-nombre">4</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/paysage/?cat=15">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Petit comité</h4>
+        <p>Bienvenue dans la catégorie Petit Comité de notre club de…</p>
+        <p><span class="article-nombre">3</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/petit-comite/?cat=17">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Pleine nature</h4>
+        <p>Échappez à l'agitation urbaine et reconnectez-vous avec la nature sauvage…</p>
+        <p><span class="article-nombre">13</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/pleine-nature/?cat=9">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Populaire</h4>
+        <p>Nos destinations les plus populaires en 2024</p>
+        <p><span class="article-nombre">6</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/populaire/?cat=11">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Repos</h4>
+        <p>Offrez-vous une escapade relaxante dans des destinations tranquilles où le…</p>
+        <p><span class="article-nombre">8</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/repos/?cat=4">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Solo</h4>
+        <p>Bienvenue dans la catégorie Solo de notre club de voyage…</p>
+        <p><span class="article-nombre">4</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/solo/?cat=18">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Sportif</h4>
+        <p>Entraînez-vous, défiez-vous et repoussez vos limites dans des destinations offrant…</p>
+        <p><span class="article-nombre">13</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/sportif/?cat=6">Voir tous les articles</a></p>
+      </div>
+          <div class="contenu clr-agencement-rouge2">
+        <h4 class="contenu-titre">Zen</h4>
+        <p>Retrouvez l'harmonie intérieure et la paix de l'esprit dans des…</p>
+        <p><span class="article-nombre">6</span> Articles</p>
+        <p class="contenu-lien-article"><a href="http://localhost:8080/4w4-2024-gr2/category/zen/?cat=5">Voir tous les articles</a></p>
+      </div>
+    
+  </section>
+</div>
+<!-- Section pour afficher un événement -->
+<div id="evenement" class="global">
+  <section class="evenement__section">
+    <h2>Événement</h2>
+    <blockquote>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+      delectus est consectetur nobis accusantium nesciunt pariatur labore
+      modi tempora perferendis, <span>necessitatibus a,</span> ex ratione
+      neque fugit, repellendus id ab! Tenetur?
+    </blockquote>
+  </section>
+  <div class="vague">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path class="remplissage" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+    </svg>
+</div></div>
 
-    <div id="footer" class="global">
-      <footer class="footer__section">
-        <form class="recherche" action="">
-          <input
-            class="recherche__input"
-            type="search"
-            name=""
-            id=""
-            placeholder="Recherche"
-          />
-          <button class="recherche__button">
-            <svg
-              width="24"
-              height="24"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              color="#000"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-        </form>
-        <div class="sociaux">
-          <a href="#"
-            ><svg
-              width="24"
-              height="24"
-              role="img"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              color="#000"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Google icon</title>
-              <path
-                d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"
-              ></path>
-            </svg>
-          </a>
-          <a href="#">
-            <svg
-              width="24"
-              height="24"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              color="#000"
-            >
-              <title>YouTube icon</title>
-              <path
-                d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"
-              ></path>
-            </svg>
-          </a>
-          <a href="#">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              color="#000"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.818 15.136l5.318-3.272-5.318-3zM12 6.278c3.155 0 5.722 2.567 5.722 5.722S15.155 17.722 12 17.722 6.278 15.155 6.278 12 8.845 6.278 12 6.278m0-.55a6.272 6.272 0 100 12.545c3.465 0 6.273-2.808 6.273-6.273S15.465 5.727 12 5.727zM24 12a12 12 0 01-12 12A12 12 0 010 12 12 12 0 0112 0a12 12 0 0112 12"
-              ></path>
-            </svg>
-          </a>
-          <a href="#">
-            <svg
-              width="24"
-              height="24"
-              role="img"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              color="#000"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>GitHub icon</title>
-              <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-              ></path>
-            </svg>
-          </a>
-          <a href="#">
-            <svg
-              width="24"
-              height="24"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              color="#000"
-            >
-              <path fill="none" d="M0 0h24v24H0z"></path>
-              <path
-                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
-              ></path>
-            </svg>
-          </a>
-          <a href="#">
-            <svg
-              width="24"
-              height="24"
-              role="img"
-              viewBox="0 0 24 24"
-              fill="csurrentColor"
-              color="#000"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Spotify icon</title>
-              <path
-                d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
-              ></path>
-            </svg>
-          </a>
-        </div>
-        <span>
-          Explorez nos destinations de rêve pour votre prochain voyage.</span
-        >
-        <div class="menu-footer-container">
-          <ul id="menu-footer" class="menu">
-            <li
-              id="menu-item-95"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95"
-            >
-              <a
-                href="https://www.ca.kayak.com/flights/YTO-YVR/2024-03-29/2024-04-07?sort=bestflight_a"
-                >Vancouver</a
-              >
-            </li>
-            <li
-              id="menu-item-96"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"
-            >
-              <a
-                href="https://www.ca.kayak.com/flight-routes/Canada-CA0/New-York-NYC"
-                >New York</a
-              >
-            </li>
-            <li
-              id="menu-item-97"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97"
-            >
-              <a
-                href="https://www.ca.kayak.com/flight-routes/Canada-CA0/Paris-PAR"
-                >Paris</a
-              >
-            </li>
-            <li
-              id="menu-item-98"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98"
-            >
-              <a
-                href="https://www.ca.kayak.com/flight-routes/Canada-CA0/India-IN0"
-                >Inde</a
-              >
-            </li>
-            <li
-              id="menu-item-99"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99"
-            >
-              <a
-                href="https://www.ca.kayak.com/flight-routes/Canada-CA0/Winnipeg-YWG"
-                >Winnipeg</a
-              >
-            </li>
-            <li
-              id="menu-item-100"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100"
-            >
-              <a
-                href="https://www.ca.kayak.com/flight-routes/Canada-CA0/London-LON"
-                >Londres</a
-              >
-            </li>
-            <li
-              id="menu-item-101"
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101"
-            >
-              <a
-                href="https://www.ca.kayak.com/flight-routes/Canada-CA0/Iceland-IS0"
-                >Islande</a
-              >
-            </li>
-          </ul>
-        </div>
-      </footer>
+
+<div id="footer" class="global">
+  <!-- Section pour le pied de page -->
+  <footer class="footer__section">
+    <!-- Formulaire de recherche -->
+    <form class="recherche" action="">
+      <input class="recherche__input" type="search" name="" id="" placeholder="Recherche" />
+      <button class="recherche__button">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000">
+          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </form>
+    <div class="sociaux">
+      <a href="#"><svg width="24" height="24" role="img" viewBox="0 0 24 24" fill="currentColor" color="#000" xmlns="http://www.w3.org/2000/svg">
+          <title>Google icon</title>
+          <path d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"></path>
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="24" height="24" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#000">
+          <title>YouTube icon</title>
+          <path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path>
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" color="#000" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.818 15.136l5.318-3.272-5.318-3zM12 6.278c3.155 0 5.722 2.567 5.722 5.722S15.155 17.722 12 17.722 6.278 15.155 6.278 12 8.845 6.278 12 6.278m0-.55a6.272 6.272 0 100 12.545c3.465 0 6.273-2.808 6.273-6.273S15.465 5.727 12 5.727zM24 12a12 12 0 01-12 12A12 12 0 010 12 12 12 0 0112 0a12 12 0 0112 12"></path>
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="24" height="24" role="img" viewBox="0 0 24 24" fill="currentColor" color="#000" xmlns="http://www.w3.org/2000/svg">
+          <title>GitHub icon</title>
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#000">
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"></path>
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="24" height="24" role="img" viewBox="0 0 24 24" fill="csurrentColor" color="#000" xmlns="http://www.w3.org/2000/svg">
+          <title>Spotify icon</title>
+          <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"></path>
+        </svg>
+      </a>
     </div>
-  </body>
+    <!-- Texte de description -->
+    <span> Explorez nos destinations de rêve pour votre prochain voyage.</span>
+    <!-- Menu de navigation du pied de page -->
+    <div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-95" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95"><a href="https://www.ca.kayak.com/flights/YTO-YVR/2024-03-29/2024-04-07?sort=bestflight_a">Vancouver</a></li>
+<li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"><a href="https://www.ca.kayak.com/flight-routes/Canada-CA0/New-York-NYC">New York</a></li>
+<li id="menu-item-97" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97"><a href="https://www.ca.kayak.com/flight-routes/Canada-CA0/Paris-PAR">Paris</a></li>
+<li id="menu-item-98" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98"><a href="https://www.ca.kayak.com/flight-routes/Canada-CA0/India-IN0">Inde</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99"><a href="https://www.ca.kayak.com/flight-routes/Canada-CA0/Winnipeg-YWG">Winnipeg</a></li>
+<li id="menu-item-100" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100"><a href="https://www.ca.kayak.com/flight-routes/Canada-CA0/London-LON">Londres</a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101"><a href="https://www.ca.kayak.com/flight-routes/Canada-CA0/Iceland-IS0">Islande</a></li>
+</ul></div>  </footer>
+</div>
+</body>
+
 </html>

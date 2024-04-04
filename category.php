@@ -6,6 +6,7 @@
         <h2>La catégorie</h2>
         <div class="section__cours">
             <?php
+            // Vérifie s'il y a des articles à afficher
             if (have_posts()) :
                 while (have_posts()) : the_post();
             ?>

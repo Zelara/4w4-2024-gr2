@@ -1,5 +1,7 @@
 <div id="footer" class="global">
+  <!-- Section pour le pied de page -->
   <footer class="footer__section">
+    <!-- Formulaire de recherche -->
     <form class="recherche" action="">
       <input class="recherche__input" type="search" name="" id="" placeholder="Recherche" />
       <button class="recherche__button">
@@ -44,7 +46,9 @@
         </svg>
       </a>
     </div>
+    <!-- Texte de description -->
     <span> Explorez nos destinations de rêve pour votre prochain voyage.</span>
+    <!-- Menu de navigation du pied de page -->
     <?php wp_nav_menu(array("menu" => "footer")); ?>
   </footer>
 </div>
