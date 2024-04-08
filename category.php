@@ -21,32 +21,15 @@
 
     </section>
 </div>
-<div id="categorie" class="global diagonal">
-    <section class="categorie__section">
-        <h2>Galerie</h2>
-        <a href="#">Livre 1984</a>
-        <blockquote>
-            <p>
-                “La liberté, c'est la liberté de dire que deux et deux font quatre.
-                Lorsque cela est accordé, le reste suit.” “La guerre, c'est la paix,
-                la liberté c'est l'esclavage,<span>
-                    l'ignorance c'est la force.</span>” “Les intellectuels sont portés au totalitarisme bien plus que les
-                gens ordinaires.”
-            </p>
-            <p>par George Orwell</p>
-        </blockquote>
-    </section>
-</div>
 <div id="evenement" class="global">
     <section class="evenement__section">
-        <h2>Événement</h2>
-        <a href="#">Aventure</a>
-        <blockquote>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
-            delectus est consectetur nobis accusantium nesciunt pariatur labore
-            modi tempora perferendis, <span>necessitatibus a,</span> ex ratione
-            neque fugit, repellendus id ab! Tenetur?
-        </blockquote>
+        <h2>Conseils</h2>
+        <p>
+            Lors de vos voyages, gardez toujours une copie numérique et papier de vos documents
+            importants tels que votre passeport, votre visa, vos billets d'avion et vos
+            réservations d'hôtel. Avoir ces informations sous la main peut vous éviter des
+            soucis en cas de perte ou de vol.
+        </p>
     </section>
     <?php get_template_part("gabarit/vague") ?>
 </div>

@@ -20,18 +20,17 @@
     </section>
 </div>
 
-<!-- Section Événement -->
+<!-- Section conseils -->
 <div id="evenement" class="global">
     <section class="evenement__section">
-        <h2>Événement</h2>
-        <blockquote>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
-            delectus est consectetur nobis accusantium nesciunt pariatur labore
-            modi tempora perferendis, <span>necessitatibus a,</span> ex ratione
-            neque fugit, repellendus id ab! Tenetur?
-        </blockquote>
+        <h2>Conseils</h2>
+        <p>
+            Lors de vos voyages, gardez toujours une copie numérique et papier de vos documents
+            importants tels que votre passeport, votre visa, vos billets d'avion et vos
+            réservations d'hôtel. Avoir ces informations sous la main peut vous éviter des
+            soucis en cas de perte ou de vol.
+        </p>
     </section>
-    <!-- Gabarit pour une vague -->
     <?php get_template_part("gabarit/vague") ?>
 </div>
 
