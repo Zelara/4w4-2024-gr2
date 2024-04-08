@@ -30,5 +30,6 @@
             <input id="chk_burger" type="checkbox">
             <!-- Menu de navigation WordPress -->
             <?php wp_nav_menu(array("container" => "nav", "menu" => "principal")) ?>
+            <?php get_search_form() ?>
         </header>
     </div>

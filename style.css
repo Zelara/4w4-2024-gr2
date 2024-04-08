@@ -420,6 +420,18 @@ blockquote {
   color: var(--couleur-general);
 }
 
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#erreur {
+  background-color: var(--couleur-arriere-general);
+  color: var(--couleur-general);
+}
+
 /* ////////////////////////////////////////// */
 /* les effets                                 */
 /* ////////////////////////////////////////// */
