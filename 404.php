@@ -3,7 +3,7 @@
 ?>
 
 <?php get_header(); ?>
-<h2>404.php</h2>
+<!-- <h2>404.php</h2> -->
 <div id="erreur" class="global">
   <section>
     <h2>Accueil</h2>
