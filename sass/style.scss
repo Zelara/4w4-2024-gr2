@@ -46,8 +46,8 @@ Ce thème a été développé dans le cadre du cours 4W4
 @import "footer";
 @import "single";
 @import "categorie";
-@import "search.scss";
-@import "404.scss";
+@import "search";
+@import "404";
 /* ////////////////////////////////////////// */
 /* les effets                                 */
 /* ////////////////////////////////////////// */
@@ -57,6 +57,7 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* ////////////////////////////////////////// */
 /* les composants                             */
 /* ////////////////////////////////////////// */
+/* ------------------------------------------------------ */
 @import "composant/recherche";
 @import "composant/sociaux";
 @import "composant/contenu";

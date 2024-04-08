@@ -478,10 +478,10 @@ blockquote {
 /* ////////////////////////////////////////// */
 /* les composants                             */
 /* ////////////////////////////////////////// */
+/* ------------------------------------------------------ */
 .recherche {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
 }
 
 .recherche__input {
