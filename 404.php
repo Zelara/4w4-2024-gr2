@@ -8,8 +8,8 @@
   <section>
     <div class="contenu-erreur">
       <?php the_post_thumbnail("thumbnail"); ?>
-      <h2 class="titre-erreur">Erreur 404</h2>
-      <p class="texte-erreur">L'adresse que vous avez entrez n'existe pas. Vous pouvez revenir à la page d'accueil en cliquant sur ce lien</p>
+      <h1 class="titre-erreur">Erreur 404</h1>
+      <h2 class="texte-erreur">L'adresse que vous avez entrez n'existe pas. Vous pouvez revenir à la page d'accueil en cliquant sur ce lien</h2>
       <p class="texte-erreur">Pour revenir à la page d'accueil cliquer sur le lien suivant</p>
       <div class="boite-erreur">
         <a href="<?php echo get_bloginfo('url'); ?>"> <?php echo get_bloginfo('name'); ?></a>
