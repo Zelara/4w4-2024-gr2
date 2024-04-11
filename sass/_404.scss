@@ -34,17 +34,25 @@
   background-color: var(--couleur-bouton-rouge);
   padding: 0.6rem;
   width: 30vw;
+  transition: all 0.3s ease 0s;
+  border: 4px solid var(--couleur-noir);
+  border-radius: 6px;
 
   &:hover {
+    color: var(--couleur-blanc);
     background-color: var(--couleur-bouton-rouge-pale);
+    color: var(--couleur-noir);
+    border-radius: 50px;
+    border-color: var(--couleur-noir);
+    transition: all 0.3s ease 0s;
 
     a {
-      color: white;
+      color: var(--couleur-noir);
     }
   }
 
   a {
-    color: #333;
+    color: var(--couleur-blanc);
     text-decoration: none;
   }
 

@@ -20,7 +20,7 @@
       <div class="bas-erreur">
         <!-- Ajout de l'img -->
         <?php
-        $image_id = 112;
+        $image_id = 853;
         $image = wp_get_attachment_image($image_id, 'full', false, array('class' => 'img-erreur'));
         echo $image;
         ?>
