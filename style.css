@@ -442,12 +442,24 @@ blockquote {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+}
+@media screen and (min-width: 550px) {
+  .contenu-erreur {
+    flex-direction: row;
+  }
 }
 
 .titre-erreur {
   font-weight: bold;
   text-shadow: 2px 2px 2px black;
+}
+
+.haut-erreur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .boite-erreur {
@@ -467,7 +479,12 @@ blockquote {
 }
 @media screen and (min-width: 550px) {
   .boite-erreur {
-    width: 17vw;
+    width: 10rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .boite-erreur {
+    width: 15rem;
   }
 }
 
