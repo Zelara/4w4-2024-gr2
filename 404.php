@@ -15,7 +15,7 @@
           <a href="<?php echo get_bloginfo('url'); ?>"> <?php echo get_bloginfo('name'); ?></a>
         </div>
         <?php get_search_form() ?>
-        <?php wp_nav_menu(array("menu" => "footer")); ?>
+        <?php wp_nav_menu(array("menu" => "categorie-liens")); ?>
       </div>
       <div class="bas-erreur">
         <!-- Ajout de l'img -->

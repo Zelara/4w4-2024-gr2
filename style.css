@@ -497,6 +497,20 @@ blockquote {
   }
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0;
+}
+@media screen and (min-width: 1100px) {
+  .menu {
+    gap: 1.3rem;
+  }
+}
+
 /* ////////////////////////////////////////// */
 /* les effets                                 */
 /* ////////////////////////////////////////// */
