@@ -241,12 +241,12 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 
 */
 h1 {
-  font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
+  font-size: clamp(1.3rem, -2.875rem + 14vw, 3.5rem);
   font-weight: bold;
 }
 
 h2 {
-  font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+  font-size: clamp(1rem, -0.5714rem + 6.2857vw, 1.7rem);
   font-weight: bold;
 }
 
@@ -468,6 +468,15 @@ blockquote {
 @media screen and (min-width: 550px) {
   .boite-erreur {
     width: 17vw;
+  }
+}
+
+.img-erreur {
+  display: none;
+}
+@media screen and (min-width: 550px) {
+  .img-erreur {
+    display: block;
   }
 }
 

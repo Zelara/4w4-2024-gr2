@@ -42,3 +42,10 @@
     width: 17vw;
   }
 }
+
+.img-erreur {
+  display: none;
+  @media screen and (min-width: 550px) {
+    display: block;
+  }
+}
