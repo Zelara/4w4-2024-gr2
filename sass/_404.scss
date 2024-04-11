@@ -1,4 +1,44 @@
 #erreur {
-    background-color: var(--couleur-arriere-general);
-    color: var(--couleur-general);
+  background-color: var(--couleur-arriere-general);
+  color: var(--couleur-general);
+}
+
+.texte-erreur {
+  margin: 0;
+}
+.contenu-erreur {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.titre-erreur {
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
+
+.boite-erreur {
+  background-color: var(--couleur-bouton-rouge);
+  padding: 0.6rem;
+  width: 30vw;
+
+  &:hover {
+    background-color: var(--couleur-bouton-rouge-pale);
+
+    a {
+      color: white;
+    }
   }
+
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 550px) {
+    width: 17vw;
+  }
+}

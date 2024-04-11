@@ -53,3 +53,10 @@ body {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
 }
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
