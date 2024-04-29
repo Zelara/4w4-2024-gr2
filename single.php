@@ -13,6 +13,9 @@
                         <?php the_post_thumbnail("medium"); ?>
                         <h4 class="contenu-titre"> <?php the_title() ?></h4>
                         <p> <?php the_content(); ?></p>
+                        <p>Température minimum: <?php the_field("temperature_minimum") ?></p>
+                        <p>Température maximum: <?php the_field("temperature_maximum") ?></p>
+                        <p>Ville avoisinante: <?php the_field("ville_avoisinante") ?></p>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
