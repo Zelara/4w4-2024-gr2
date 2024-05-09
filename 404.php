@@ -17,6 +17,7 @@
         <?php get_search_form() ?>
         <?php wp_nav_menu(array("menu" => "categorie-liens")); ?>
       </div>
+      
       <div class="bas-erreur">
         <!-- Ajout de l'img -->
         <?php
