@@ -764,4 +764,9 @@ blockquote {
 .custom-logo {
   width: 2rem;
   height: 2rem;
+}
+
+.menu-tous {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
