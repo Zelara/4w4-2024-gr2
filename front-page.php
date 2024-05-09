@@ -1,5 +1,6 @@
 <?php
 // Modèle de base index.php
+
 ?>
 
 <?php get_header(); ?>
@@ -58,11 +59,11 @@
 <!-- Section pour afficher un événement -->
 <div id="evenement" class="global">
   <section class="evenement__section">
-    <h2>Conseils</h2>
-	  <?php
-		// Appel du shortcode directement dans le fichier front-page.php
-		echo do_shortcode('[em_destination]');
-	  ?>
+    <h2>Traversées Culturelles</h2>
+    <?php
+    // Appel du shortcode directement dans le fichier front-page.php
+    echo do_shortcode('[em_destination]');
+    ?>
     <p>
       Lors de vos voyages, gardez toujours une copie numérique et papier de vos documents
       importants tels que votre passeport, votre visa, vos billets d'avion et vos
