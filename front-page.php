@@ -41,7 +41,7 @@
   <section class="section__destination">
     <h2>Liste complète de toutes les catégories</h2>
     <!-- get_categories() : Est l'ensemble des catégorie du site -->
-    <!-- get_category() : Est l'ensemble des catégories d'un post -->
+    <!-- get_category() : Est l'ensemble des catégories d'un post  -->
     <?php
     $categories = get_categories();
     foreach ($categories as $category) : ?>
