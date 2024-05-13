@@ -27,8 +27,8 @@
           $ma_categorie = "carte";
           if (in_category("galerie")) {
             $ma_categorie = "galerie";
-            get_template_part("gabarit/categorie", $ma_categorie);
           }
+          get_template_part("gabarit/categorie", $ma_categorie);
       ?>
         <?php endwhile; ?>
       <?php endif; ?>
