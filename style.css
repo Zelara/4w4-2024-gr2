@@ -28,6 +28,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --couleur-bleu: #1d24ca;
   --degrader-rouge1: rgb(223, 27, 27);
   --degrader-rouge2: rgba(186, 48, 48, 1);
+  --couleur-bouton-carrousel: #3498db;
   --nb-element: 5;
   --increment-angle: calc(360 / var(--nb-element));
   --angle-initial: 360;
@@ -586,7 +587,7 @@ blockquote {
   fill: var(--couleur-bouton-rouge);
 }
 
-.section__cours {
+.section__destination {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

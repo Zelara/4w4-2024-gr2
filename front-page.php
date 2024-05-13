@@ -18,19 +18,18 @@
 <div id="populaire" class="global">
   <section>
     <h2>Les destinations les plus populaires</h2>
-    <div class="section__cours">
+    <div class="section__destination">
 
 
       <!-- Vérifie s'il y a des articles à afficher -->
       <?php if (have_posts()) :
-        while (have_posts()) : the_post(); ?>
-          <div class="contenu clr-agencement-rouge2">
-            <?php the_post_thumbnail("thumbnail"); ?>
-            <h4 class="contenu-titre"> <?php the_title() ?></h4>
-            <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>
-            <p class="contenu-suite"><a href="<?php echo get_permalink(); ?>">La suite</a></p>
-            <?php the_category('') ?>
-          </div>
+        while (have_posts()) : the_post();
+          $ma_categorie = "carte";
+          if (in_category("galerie")) {
+            $ma_categorie = "galerie";
+            get_template_part("gabarit/categorie", $ma_categorie);
+          }
+      ?>
         <?php endwhile; ?>
       <?php endif; ?>
     </div>
@@ -39,7 +38,7 @@
 </div>
 <!-- Section pour afficher les catégories -->
 <div id="categorie" class="global diagonal">
-  <section class="section__cours">
+  <section class="section__destination">
     <h2>Liste complète de toutes les catégories</h2>
     <!-- get_categories() : Est l'ensemble des catégorie du site -->
     <!-- get_category() : Est l'ensemble des catégories d'un post -->

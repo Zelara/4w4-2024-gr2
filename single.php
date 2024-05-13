@@ -4,7 +4,7 @@
 <div id="single" class="global">
     <section>
         <h2>La suite</h2>
-        <div class="section__cours">
+        <div class="section__destination">
             <?php
             if (have_posts()) :
                 while (have_posts()) : the_post();
