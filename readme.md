@@ -9,7 +9,7 @@
 
 ## Nouveau ajout
 
-- La carrousel à été ajouté
+- Le carrousel à été ajouté. Ajout du Rest API.
 
 ### Liens URL (Github):
 
