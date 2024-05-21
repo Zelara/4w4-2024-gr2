@@ -335,6 +335,13 @@ body {
   gap: 1rem;
 }
 
+.traverse__culturelles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
 a {
   color: var(--couleur-mauve);
   font-size: 1.1rem;
@@ -765,7 +772,7 @@ blockquote {
   display: none;
 }
 
-#chk_burger:checked ~ .menu-principal-container {
+#chk_burger:checked ~ .menu-tous .menu-principal-container {
   transform: translateX(0);
 }
 
@@ -774,7 +781,7 @@ blockquote {
   position: fixed;
   top: 0.7rem;
   left: 0.7rem;
-  z-index: 6;
+  z-index: 10;
 }
 @media screen and (min-width: 550px) {
   #burger {
