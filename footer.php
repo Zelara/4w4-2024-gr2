@@ -52,6 +52,12 @@
         <a href="https://github.com/Zelara/4w4-2024-gr2/tree/tp2">Adresse Github tp2</a>
         <?php get_search_form() ?>
       </div>
+      <!-- Ajout de l'img -->
+      <?php
+      $image_id = 136;
+      $image = wp_get_attachment_image($image_id, 'full', false, array('class' => 'img__footer'));
+      echo $image;
+      ?>
 
     </div>
   </footer>

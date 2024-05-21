@@ -452,6 +452,20 @@ blockquote {
   gap: 1rem;
 }
 
+.img__footer {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 550px) {
+  .img__footer {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
 #single {
   background-color: var(--couleur-arriere-general);
   color: var(--couleur-general);
