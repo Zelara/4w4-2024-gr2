@@ -13,5 +13,5 @@
 
 ### Liens URL (Github):
 
-- Github-page : https://github.com/Zelara/carrousel-2024-gr2/tree/tp2¸
+- Github-page : https://github.com/Zelara/4w4-2024-gr2/tree/tp2
 - Lien vers mon site WHC : https://gftnth00.mywhc.ca/tim44/
