@@ -356,7 +356,8 @@ a:hover, a:focus {
   color: var(--couleur-lien-hover);
 }
 
-button.entete__button {
+.entete__button {
+  display: inline-block; /* Ajoutez ceci pour que la transformation fonctionne */
   font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 2.5rem);
   padding: 1rem 2rem;
   background-image: linear-gradient(90deg, var(--couleur-bouton-rouge) 0%, var(--couleur-bouton-rouge-pale) 100%);
@@ -367,12 +368,11 @@ button.entete__button {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
-button.entete__button:hover {
-  background-image: linear-gradient(90deg, var(--couleur-bouton-rouge-pale) 0%, var(--couleur-bouton-rouge) 100%);
-  transform: translateY(-1rem);
+.entete__button:hover {
+  transform: translateY(-1rem); /* Modifiez la valeur en fonction de votre préférence */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
-button.entete__button:active, button.entete__button:visited {
+.entete__button:active, .entete__button:visited {
   background-image: linear-gradient(90deg, var(--couleur-bouton-rouge) 0%, var(--couleur-bouton-rouge-pale) 100%);
 }
 
