@@ -54,7 +54,7 @@
       </div>
       <!-- Ajout de l'img -->
       <?php
-      $image_id = 136;
+      $image_id = 954;
       $image = wp_get_attachment_image($image_id, 'full', false, array('class' => 'img__footer'));
       echo $image;
       ?>
