@@ -19,10 +19,10 @@
   p {
     color: var(--couleur-noir);
   }
-  // transition: transform 0.3s ease; // Smooth transition for the hover effect
-  // &:hover {
-  //   transform: scale(1.04); // Scale the element on hover
-  // }
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.04); // Scale the element on hover
+  }
 }
 
 .contenu * {
