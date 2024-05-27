@@ -41,6 +41,25 @@
     <span> Explorez nos destinations de rêve pour votre prochain voyage.</span>
     <!-- Menu de navigation du pied de page -->
     <?php wp_nav_menu(array("menu" => "footer")); ?>
+    <div class="footer__information">
+      <div class="footer__information2">
+        <p>3800 Sherbrooke St E, Montreal, Quebec H1X 2A2</p>
+        <p>Créer une page pour un club de voyage qui montre des destinations parfaites.</p>
+        <p>James Ling</p>
+      </div>
+      <div class="footer__information3">
+        <a href="https://zelara.github.io/4w4-2024-gr2/">Github-page</a>
+        <a href="https://github.com/Zelara/4w4-2024-gr2/tree/tp2">Adresse Github tp2</a>
+        <?php get_search_form() ?>
+      </div>
+      <!-- Ajout de l'img -->
+      <?php
+      $image_id = 954;
+      $image = wp_get_attachment_image($image_id, 'full', false, array('class' => 'img__footer'));
+      echo $image;
+      ?>
+
+    </div>
   </footer>
 </div>
 <?php wp_footer() ?>

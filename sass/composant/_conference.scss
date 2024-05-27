@@ -1,0 +1,36 @@
+.site__main {
+  // dégradé
+  background: rgb(195, 0, 16);
+  background: linear-gradient(
+    180deg,
+    rgba(195, 0, 16, 0.8) 0%,
+    rgba(222, 10, 38, 0.8) 25%,
+    rgba(255, 44, 44, 0.8) 50%,
+    rgba(238, 107, 110, 0.8) 75%,
+    rgba(255, 203, 209, 0.8) 100%
+  );
+}
+
+.conference__champs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wp-block-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.conference__texte {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
