@@ -10,7 +10,7 @@
     <h1 class="bgc-text"><?php echo get_bloginfo('name'); ?></h1>
     <h2 class="bgc-text"><span><?php echo get_bloginfo('description'); ?></span></h2>
     <h3 class="bgc-text">TIM - Collège de Maisonneuve</h3>
-    <a href="http://localhost:8080/4w4-2024-gr2/conference/" class="entete__button">Conférence de la semaine</a>
+    <a href="https://gftnth00.mywhc.ca/tim44/conference/" class="entete__button">Conférence de la semaine</a>
     <div class="sociaux">
       <a href="#"><svg width="24" height="24" role="img" viewBox="0 0 24 24" fill="currentColor" color="#000" xmlns="http://www.w3.org/2000/svg">
           <title>Google icon</title>
