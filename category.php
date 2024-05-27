@@ -3,7 +3,7 @@
 
 <div id="categorie-seul" class="global">
     <section>
-        <h2>La catégorie</h2>
+        <h2><?php the_category(', '); ?></h2>
         <div class="section__destination">
             <?php
             // Vérifie s'il y a des articles à afficher

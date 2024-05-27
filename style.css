@@ -673,13 +673,9 @@ blockquote {
   border-radius: 10px;
   flex: 1 0 252.5px;
   box-shadow: var(--couleur-box-shadow) 0px 3px 8px;
-  transition: transform 0.3s ease;
 }
 .contenu p {
   color: var(--couleur-noir);
-}
-.contenu:hover {
-  transform: scale(1.04);
 }
 
 .contenu * {

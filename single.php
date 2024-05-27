@@ -3,7 +3,7 @@
 
 <div id="single" class="global">
     <section>
-        <h2>La suite</h2>
+        <h2><?php the_category(', '); ?></h2>
         <div class="section__destination">
             <?php
             if (have_posts()) :
