@@ -7,7 +7,6 @@
   .section-a,
   .section-b,
   .section-c,
-  .section-d,
   .section-e {
     width: 100%;
     height: 100%;
@@ -34,4 +33,23 @@
   .section-e {
     margin-bottom: 20px; /* Espacement entre les sections avec vague */
   }
+
+  
+}
+
+#pays-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pays-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--couleur-bouton-carrousel);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
