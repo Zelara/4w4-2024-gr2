@@ -589,16 +589,36 @@ blockquote {
   }
 }
 
-.pays__texte {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.gallery {
+.site__main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.site__main .section-a,
+.site__main .section-b,
+.site__main .section-c,
+.site__main .section-d,
+.site__main .section-e {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.site__main .gallery {
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 20px;
+}
+.site__main .gallery img {
+  width: calc(25% - 10px); /* Calcul pour un affichage en grille avec espacement */
+  margin-bottom: 10px;
+}
+.site__main .section-c,
+.site__main .section-e {
+  margin-bottom: 20px; /* Espacement entre les sections avec vague */
 }
 
 /* ////////////////////////////////////////// */
