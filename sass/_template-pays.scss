@@ -33,23 +33,25 @@
   .section-e {
     margin-bottom: 20px; /* Espacement entre les sections avec vague */
   }
-
-  
 }
 
 #pays-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pays-button {
-    margin: 5px;
-    padding: 10px;
-    background-color: var(--couleur-bouton-carrousel);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  background-color: var(--couleur-bouton-carrousel);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #df2264;
+  }
 }

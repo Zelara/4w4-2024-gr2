@@ -636,6 +636,9 @@ blockquote {
   font-size: 16px;
   border-radius: 5px;
 }
+.pays-button:hover {
+  background-color: #df2264;
+}
 
 /* ////////////////////////////////////////// */
 /* les effets                                 */

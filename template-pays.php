@@ -28,7 +28,7 @@
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
-    <!-- <?php get_template_part("gabarit/vague") ?> -->
+
 
 
 
@@ -41,4 +41,5 @@
 
 
 </main><!-- #main -->
+
 <?php get_footer(); ?>
