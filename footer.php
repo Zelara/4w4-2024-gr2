@@ -50,6 +50,10 @@
       <div class="footer__information3">
         <a href="https://zelara.github.io/4w4-2024-gr2/">Github-page</a>
         <a href="https://github.com/Zelara/4w4-2024-gr2/tree/tp2">Adresse Github tp2</a>
+        <a href="https://gftnth00.mywhc.ca/tim44/">Site WHC</a>
+        <a href="https://github.com/Zelara/carrousel-2024-gr2/tree/tp2">Github carrousel</a>
+        <a href="https://github.com/Zelara/4w4-rest-api">Adresse Github Rest-Api voyage</a>
+        <a href="https://github.com/Zelara/Rest-API-Pays">Adresse Github Rest-Api pays </a>
         <?php get_search_form() ?>
       </div>
       <!-- Ajout de l'img -->

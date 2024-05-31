@@ -70,6 +70,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
 }
 
+#milieu {
+  background: linear-gradient(180deg, rgba(195, 0, 16, 0.8) 0%, rgba(222, 10, 38, 0.8) 25%, rgba(255, 44, 44, 0.8) 50%, rgba(238, 107, 110, 0.8) 75%, rgba(255, 203, 209, 0.8) 100%);
+}
+
 .clr-primaire-100 {
   color: hsl(220, 100%, 85%);
 }
@@ -587,6 +591,84 @@ blockquote {
   .menu {
     gap: 1.3rem;
   }
+}
+
+.pays__main {
+  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pays__main .section-a,
+.pays__main .section-b,
+.pays__main .section-c,
+.pays__main .section-e {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.pays__main .gallery {
+  display: flex;
+  justify-content: center; /* Centrer les images horizontalement */
+  gap: 10px;
+  overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
+}
+.pays__main .gallery .gallery-item {
+  width: 250px; /* Largeur fixe pour chaque image */
+  border-radius: 5px; /* Ajoute un bord arrondi */
+  overflow: hidden; /* Cache le dépassement de contenu */
+}
+.pays__main .gallery .gallery-item img {
+  width: 100%;
+  height: auto; /* Pour conserver le ratio */
+  object-fit: cover; /* Assure que l'image remplit la div */
+}
+.pays__main .section-c,
+.pays__main .section-e {
+  margin-bottom: 20px; /* Espacement entre les sections avec vague */
+}
+
+#pays-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.pays-button {
+  margin: 5px;
+  padding: 10px;
+  background-color: var(--couleur-bouton-carrousel);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.pays-button:hover {
+  background-color: #df2264;
+}
+
+.contenu-pour-vague {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.pays__second {
+  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* ////////////////////////////////////////// */

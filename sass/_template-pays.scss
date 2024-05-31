@@ -1,0 +1,83 @@
+.pays__main {
+  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .section-a,
+  .section-b,
+  .section-c,
+  .section-e {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center; /* Centrer les images horizontalement */
+    gap: 10px;
+    overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
+
+    .gallery-item {
+      width: 250px; /* Largeur fixe pour chaque image */
+      border-radius: 5px; /* Ajoute un bord arrondi */
+      overflow: hidden; /* Cache le dépassement de contenu */
+
+      img {
+        width: 100%;
+        height: auto; /* Pour conserver le ratio */
+        object-fit: cover; /* Assure que l'image remplit la div */
+      }
+    }
+  }
+
+  .section-c,
+  .section-e {
+    margin-bottom: 20px; /* Espacement entre les sections avec vague */
+  }
+}
+
+#pays-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.pays-button {
+  margin: 5px;
+  padding: 10px;
+  background-color: var(--couleur-bouton-carrousel);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #df2264;
+  }
+}
+
+.contenu-pour-vague {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.pays__second {
+  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
