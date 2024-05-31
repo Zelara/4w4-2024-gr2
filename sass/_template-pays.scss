@@ -1,4 +1,5 @@
-.site__main {
+.pays__main {
+  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .pays-button {
@@ -54,4 +56,22 @@
   &:hover {
     background-color: #df2264;
   }
+}
+
+.contenu-pour-vague {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.pays__second {
+  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
