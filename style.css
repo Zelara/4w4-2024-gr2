@@ -613,12 +613,19 @@ blockquote {
 }
 .pays__main .gallery {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center; /* Centrer les images horizontalement */
   gap: 10px;
+  overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
 }
-.pays__main .gallery img {
-  width: calc(25% - 10px); /* Calcul pour un affichage en grille avec espacement */
-  margin-bottom: 10px;
+.pays__main .gallery .gallery-item {
+  width: 250px; /* Largeur fixe pour chaque image */
+  border-radius: 5px; /* Ajoute un bord arrondi */
+  overflow: hidden; /* Cache le dépassement de contenu */
+}
+.pays__main .gallery .gallery-item img {
+  width: 100%;
+  height: auto; /* Pour conserver le ratio */
+  object-fit: cover; /* Assure que l'image remplit la div */
 }
 .pays__main .section-c,
 .pays__main .section-e {
